@@ -1,0 +1,35 @@
+2025-12-24 09:15:01 INFO  [auth-service] Application starting
+2025-12-24 09:15:02 INFO  [auth-service] Loading configuration from /etc/app/config.yaml
+2025-12-24 09:15:03 INFO  [auth-service] Connecting to database mysql-prod:3306
+2025-12-24 09:15:05 INFO  [auth-service] Database connection established
+2025-12-24 09:15:06 INFO  [auth-service] HTTP server started on port 8080
+
+2025-12-24 09:16:12 INFO  [auth-service] User login attempt user_id=12345
+2025-12-24 09:16:12 INFO  [auth-service] Authentication successful user_id=12345
+2025-12-24 09:16:45 INFO  [auth-service] User login attempt user_id=67890
+2025-12-24 09:16:46 ERROR [auth-service] Authentication failed user_id=67890 reason=invalid_password
+
+2025-12-24 09:17:10 INFO  [payment-service] Processing payment order_id=ORD-9981 amount=2500
+2025-12-24 09:17:11 ERROR [payment-service] Database timeout while processing order_id=ORD-9981
+2025-12-24 09:17:12 INFO  [payment-service] Retrying payment order_id=ORD-9981
+2025-12-24 09:17:15 ERROR [payment-service] Payment failed order_id=ORD-9981 reason=timeout
+
+2025-12-24 09:18:01 WARNING [system-monitor] Memory usage exceeded threshold usage=82%
+2025-12-24 09:18:05 WARNING [system-monitor] Disk usage exceeded threshold usage=90%
+2025-12-24 09:18:07 INFO    [system-monitor] Autoscaling triggered scale_up=1
+
+2025-12-24 09:19:20 INFO  [order-service] New order created order_id=ORD-9982
+2025-12-24 09:19:21 INFO  [order-service] Order validation successful order_id=ORD-9982
+2025-12-24 09:19:22 INFO  [order-service] Order sent to payment service order_id=ORD-9982
+
+2025-12-24 09:20:10 ERROR [network] Connection reset by peer service=payment-service
+2025-12-24 09:20:11 ERROR [network] Failed to reach payment-service after 3 retries
+
+2025-12-24 09:21:00 INFO  [kubernetes] Pod restarted pod=payment-service-7f8d9c8d4b
+2025-12-24 09:21:05 INFO  [kubernetes] Readiness probe passed pod=payment-service-7f8d9c8d4b
+
+2025-12-24 09:22:30 INFO  [auth-service] User logout user_id=12345
+2025-12-24 09:22:31 INFO  [auth-service] Session terminated user_id=12345
+
+2025-12-24 09:23:00 INFO  [system] Graceful shutdown initiated
+2025-12-24 09:23:02 INFO  [system] Application stopped successfully

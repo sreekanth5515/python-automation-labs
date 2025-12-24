@@ -1,4 +1,11 @@
-log_file = "sample.log"
+import sys
+
+if len(sys.argv) < 2:
+    print("Usage: python3 analyze_logs.py <log_file>")
+    sys.exit(1)
+
+log_file = sys.argv[1]
+
 
 error_count = 0
 warning_count = 0

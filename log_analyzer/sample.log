@@ -1,35 +1,2000 @@
-2025-12-24 09:15:01 INFO  [auth-service] Application starting
-2025-12-24 09:15:02 INFO  [auth-service] Loading configuration from /etc/app/config.yaml
-2025-12-24 09:15:03 INFO  [auth-service] Connecting to database mysql-prod:3306
-2025-12-24 09:15:05 INFO  [auth-service] Database connection established
-2025-12-24 09:15:06 INFO  [auth-service] HTTP server started on port 8080
-
-2025-12-24 09:16:12 INFO  [auth-service] User login attempt user_id=12345
-2025-12-24 09:16:12 INFO  [auth-service] Authentication successful user_id=12345
-2025-12-24 09:16:45 INFO  [auth-service] User login attempt user_id=67890
-2025-12-24 09:16:46 ERROR [auth-service] Authentication failed user_id=67890 reason=invalid_password
-
-2025-12-24 09:17:10 INFO  [payment-service] Processing payment order_id=ORD-9981 amount=2500
-2025-12-24 09:17:11 ERROR [payment-service] Database timeout while processing order_id=ORD-9981
-2025-12-24 09:17:12 INFO  [payment-service] Retrying payment order_id=ORD-9981
-2025-12-24 09:17:15 ERROR [payment-service] Payment failed order_id=ORD-9981 reason=timeout
-
-2025-12-24 09:18:01 WARNING [system-monitor] Memory usage exceeded threshold usage=82%
-2025-12-24 09:18:05 WARNING [system-monitor] Disk usage exceeded threshold usage=90%
-2025-12-24 09:18:07 INFO    [system-monitor] Autoscaling triggered scale_up=1
-
-2025-12-24 09:19:20 INFO  [order-service] New order created order_id=ORD-9982
-2025-12-24 09:19:21 INFO  [order-service] Order validation successful order_id=ORD-9982
-2025-12-24 09:19:22 INFO  [order-service] Order sent to payment service order_id=ORD-9982
-
-2025-12-24 09:20:10 ERROR [network] Connection reset by peer service=payment-service
-2025-12-24 09:20:11 ERROR [network] Failed to reach payment-service after 3 retries
-
-2025-12-24 09:21:00 INFO  [kubernetes] Pod restarted pod=payment-service-7f8d9c8d4b
-2025-12-24 09:21:05 INFO  [kubernetes] Readiness probe passed pod=payment-service-7f8d9c8d4b
-
-2025-12-24 09:22:30 INFO  [auth-service] User logout user_id=12345
-2025-12-24 09:22:31 INFO  [auth-service] Session terminated user_id=12345
-
-2025-12-24 09:23:00 INFO  [system] Graceful shutdown initiated
-2025-12-24 09:23:02 INFO  [system] Application stopped successfully
+2025-12-24 09:00:00 INFO [network] Cache refreshed
+2025-12-24 09:00:01 INFO [network] Cache refreshed
+2025-12-24 09:00:02 INFO [inventory-service] Retry successful
+2025-12-24 09:00:03 INFO [auth-service] Cache refreshed
+2025-12-24 09:00:07 INFO [order-service] User login successful
+2025-12-24 09:00:10 INFO [system-monitor] Cache refreshed
+2025-12-24 09:00:11 INFO [inventory-service] Health check passed
+2025-12-24 09:00:15 INFO [network] Connection established
+2025-12-24 09:00:20 INFO [auth-service] Health check passed
+2025-12-24 09:00:23 INFO [system-monitor] User login successful
+2025-12-24 09:00:24 INFO [payment-service] Request processed successfully
+2025-12-24 09:00:26 INFO [auth-service] Retry successful
+2025-12-24 09:00:31 INFO [kubernetes] Connection established
+2025-12-24 09:00:33 INFO [auth-service] Connection established
+2025-12-24 09:00:34 INFO [kubernetes] User login successful
+2025-12-24 09:00:35 INFO [kubernetes] Connection established
+2025-12-24 09:00:40 INFO [order-service] Retry successful
+2025-12-24 09:00:43 INFO [auth-service] Cache refreshed
+2025-12-24 09:00:46 WARNING [payment-service] Disk usage exceeded threshold
+2025-12-24 09:00:51 INFO [order-service] Connection established
+2025-12-24 09:00:55 INFO [kubernetes] User login successful
+2025-12-24 09:00:56 INFO [inventory-service] Retry successful
+2025-12-24 09:01:00 INFO [auth-service] Health check passed
+2025-12-24 09:01:03 WARNING [inventory-service] High CPU utilization
+2025-12-24 09:01:05 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:01:07 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:01:09 INFO [system-monitor] Cache refreshed
+2025-12-24 09:01:12 INFO [payment-service] Pod started
+2025-12-24 09:01:13 WARNING [inventory-service] Disk usage exceeded threshold
+2025-12-24 09:01:15 INFO [inventory-service] Request processed successfully
+2025-12-24 09:01:17 INFO [kubernetes] User login successful
+2025-12-24 09:01:21 WARNING [network] Disk usage exceeded threshold
+2025-12-24 09:01:25 INFO [inventory-service] User login successful
+2025-12-24 09:01:26 INFO [network] Retry successful
+2025-12-24 09:01:31 INFO [auth-service] Health check passed
+2025-12-24 09:01:34 INFO [kubernetes] User login successful
+2025-12-24 09:01:36 INFO [network] Health check passed
+2025-12-24 09:01:41 INFO [order-service] Pod started
+2025-12-24 09:01:44 INFO [system-monitor] Health check passed
+2025-12-24 09:01:49 INFO [kubernetes] Retry successful
+2025-12-24 09:01:52 INFO [kubernetes] Health check passed
+2025-12-24 09:01:54 WARNING [network] Memory usage exceeded threshold
+2025-12-24 09:01:59 INFO [network] Autoscaling event triggered
+2025-12-24 09:02:00 INFO [auth-service] User login successful
+2025-12-24 09:02:05 INFO [auth-service] Pod started
+2025-12-24 09:02:10 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:02:14 INFO [network] Health check passed
+2025-12-24 09:02:15 INFO [kubernetes] Pod started
+2025-12-24 09:02:18 INFO [auth-service] Health check passed
+2025-12-24 09:02:21 INFO [payment-service] Connection established
+2025-12-24 09:02:22 INFO [order-service] Retry successful
+2025-12-24 09:02:24 INFO [inventory-service] User login successful
+2025-12-24 09:02:25 INFO [payment-service] Request processed successfully
+2025-12-24 09:02:26 INFO [payment-service] Cache refreshed
+2025-12-24 09:02:30 INFO [auth-service] Pod started
+2025-12-24 09:02:32 INFO [kubernetes] User login successful
+2025-12-24 09:02:34 ERROR [auth-service] Database connection timeout
+2025-12-24 09:02:38 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:02:40 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:02:42 INFO [network] Autoscaling event triggered
+2025-12-24 09:02:45 INFO [inventory-service] Pod started
+2025-12-24 09:02:48 INFO [system-monitor] User login successful
+2025-12-24 09:02:50 WARNING [system-monitor] High CPU utilization
+2025-12-24 09:02:53 INFO [order-service] Retry successful
+2025-12-24 09:02:54 INFO [network] Pod started
+2025-12-24 09:02:58 INFO [inventory-service] Cache refreshed
+2025-12-24 09:03:03 INFO [system-monitor] Retry successful
+2025-12-24 09:03:07 INFO [inventory-service] Connection established
+2025-12-24 09:03:09 INFO [order-service] Connection established
+2025-12-24 09:03:10 INFO [order-service] Connection established
+2025-12-24 09:03:15 WARNING [network] Memory usage exceeded threshold
+2025-12-24 09:03:17 INFO [inventory-service] Retry successful
+2025-12-24 09:03:20 INFO [network] Autoscaling event triggered
+2025-12-24 09:03:23 INFO [system-monitor] Cache refreshed
+2025-12-24 09:03:27 INFO [network] Health check passed
+2025-12-24 09:03:32 WARNING [system-monitor] Disk usage exceeded threshold
+2025-12-24 09:03:36 INFO [system-monitor] Retry successful
+2025-12-24 09:03:37 INFO [system-monitor] User login successful
+2025-12-24 09:03:40 INFO [kubernetes] Pod started
+2025-12-24 09:03:44 INFO [order-service] Connection established
+2025-12-24 09:03:45 INFO [network] Connection established
+2025-12-24 09:03:48 INFO [inventory-service] User login successful
+2025-12-24 09:03:53 INFO [auth-service] Cache refreshed
+2025-12-24 09:03:54 INFO [order-service] Health check passed
+2025-12-24 09:03:55 INFO [system-monitor] Retry successful
+2025-12-24 09:03:59 WARNING [order-service] Memory usage exceeded threshold
+2025-12-24 09:04:03 INFO [payment-service] Cache refreshed
+2025-12-24 09:04:04 INFO [auth-service] Connection established
+2025-12-24 09:04:09 INFO [order-service] Cache refreshed
+2025-12-24 09:04:14 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:04:17 INFO [auth-service] Cache refreshed
+2025-12-24 09:04:18 INFO [payment-service] Cache refreshed
+2025-12-24 09:04:19 INFO [order-service] Health check passed
+2025-12-24 09:04:24 INFO [network] Connection established
+2025-12-24 09:04:26 INFO [system-monitor] Health check passed
+2025-12-24 09:04:29 INFO [kubernetes] User login successful
+2025-12-24 09:04:32 WARNING [network] Slow response detected
+2025-12-24 09:04:34 INFO [kubernetes] Cache refreshed
+2025-12-24 09:04:36 INFO [order-service] Health check passed
+2025-12-24 09:04:41 INFO [system-monitor] Connection established
+2025-12-24 09:04:42 INFO [network] Health check passed
+2025-12-24 09:04:45 INFO [system-monitor] Health check passed
+2025-12-24 09:04:49 INFO [payment-service] Health check passed
+2025-12-24 09:04:54 INFO [inventory-service] Pod started
+2025-12-24 09:04:59 INFO [kubernetes] Cache refreshed
+2025-12-24 09:05:02 INFO [order-service] Pod started
+2025-12-24 09:05:06 INFO [system-monitor] Cache refreshed
+2025-12-24 09:05:08 ERROR [auth-service] Service unavailable
+2025-12-24 09:05:12 INFO [kubernetes] User login successful
+2025-12-24 09:05:16 INFO [auth-service] Retry successful
+2025-12-24 09:05:19 INFO [kubernetes] Health check passed
+2025-12-24 09:05:23 INFO [kubernetes] Connection established
+2025-12-24 09:05:27 INFO [inventory-service] Request processed successfully
+2025-12-24 09:05:32 INFO [system-monitor] Pod started
+2025-12-24 09:05:34 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:05:39 INFO [order-service] Retry successful
+2025-12-24 09:05:43 INFO [payment-service] Pod started
+2025-12-24 09:05:44 WARNING [kubernetes] Disk usage exceeded threshold
+2025-12-24 09:05:48 INFO [order-service] User login successful
+2025-12-24 09:05:52 INFO [kubernetes] Cache refreshed
+2025-12-24 09:05:56 INFO [inventory-service] Connection established
+2025-12-24 09:06:00 INFO [inventory-service] Pod started
+2025-12-24 09:06:04 INFO [payment-service] Connection established
+2025-12-24 09:06:08 INFO [network] Pod started
+2025-12-24 09:06:10 INFO [network] Health check passed
+2025-12-24 09:06:15 INFO [kubernetes] Pod started
+2025-12-24 09:06:17 INFO [payment-service] User login successful
+2025-12-24 09:06:22 INFO [order-service] Cache refreshed
+2025-12-24 09:06:25 WARNING [kubernetes] High CPU utilization
+2025-12-24 09:06:27 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:06:29 INFO [order-service] User login successful
+2025-12-24 09:06:30 INFO [payment-service] Request processed successfully
+2025-12-24 09:06:32 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:06:34 INFO [inventory-service] Cache refreshed
+2025-12-24 09:06:39 WARNING [system-monitor] Slow response detected
+2025-12-24 09:06:43 INFO [order-service] User login successful
+2025-12-24 09:06:44 INFO [inventory-service] Connection established
+2025-12-24 09:06:46 INFO [system-monitor] Request processed successfully
+2025-12-24 09:06:48 INFO [network] Pod started
+2025-12-24 09:06:51 INFO [inventory-service] Connection established
+2025-12-24 09:06:54 INFO [inventory-service] Cache refreshed
+2025-12-24 09:06:58 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:07:03 INFO [order-service] Request processed successfully
+2025-12-24 09:07:04 INFO [inventory-service] Health check passed
+2025-12-24 09:07:08 INFO [network] Health check passed
+2025-12-24 09:07:09 INFO [auth-service] Pod started
+2025-12-24 09:07:14 INFO [network] Retry successful
+2025-12-24 09:07:15 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:07:16 INFO [payment-service] User login successful
+2025-12-24 09:07:17 INFO [kubernetes] Health check passed
+2025-12-24 09:07:18 INFO [kubernetes] Pod started
+2025-12-24 09:07:23 INFO [network] Connection established
+2025-12-24 09:07:25 INFO [payment-service] Connection established
+2025-12-24 09:07:28 WARNING [order-service] Slow response detected
+2025-12-24 09:07:30 INFO [kubernetes] Retry successful
+2025-12-24 09:07:35 INFO [system-monitor] Connection established
+2025-12-24 09:07:37 INFO [auth-service] Pod started
+2025-12-24 09:07:40 INFO [kubernetes] User login successful
+2025-12-24 09:07:41 INFO [kubernetes] User login successful
+2025-12-24 09:07:46 INFO [auth-service] Request processed successfully
+2025-12-24 09:07:51 INFO [kubernetes] Retry successful
+2025-12-24 09:07:55 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:07:56 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:07:58 INFO [payment-service] Pod started
+2025-12-24 09:07:59 INFO [auth-service] Pod started
+2025-12-24 09:08:02 INFO [inventory-service] Request processed successfully
+2025-12-24 09:08:04 INFO [auth-service] User login successful
+2025-12-24 09:08:05 INFO [order-service] Health check passed
+2025-12-24 09:08:10 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:08:15 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:08:20 INFO [network] Pod started
+2025-12-24 09:08:23 INFO [kubernetes] Retry successful
+2025-12-24 09:08:25 INFO [system-monitor] Health check passed
+2025-12-24 09:08:26 INFO [auth-service] Cache refreshed
+2025-12-24 09:08:28 INFO [network] Connection established
+2025-12-24 09:08:33 INFO [order-service] Health check passed
+2025-12-24 09:08:35 INFO [network] Health check passed
+2025-12-24 09:08:39 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:08:44 INFO [inventory-service] Cache refreshed
+2025-12-24 09:08:47 INFO [kubernetes] Retry successful
+2025-12-24 09:08:48 INFO [payment-service] Health check passed
+2025-12-24 09:08:53 INFO [kubernetes] Retry successful
+2025-12-24 09:08:57 INFO [auth-service] Cache refreshed
+2025-12-24 09:09:02 INFO [inventory-service] User login successful
+2025-12-24 09:09:05 INFO [inventory-service] Pod started
+2025-12-24 09:09:06 INFO [system-monitor] Retry successful
+2025-12-24 09:09:10 INFO [kubernetes] Retry successful
+2025-12-24 09:09:14 INFO [inventory-service] Connection established
+2025-12-24 09:09:17 INFO [inventory-service] Cache refreshed
+2025-12-24 09:09:20 INFO [payment-service] Request processed successfully
+2025-12-24 09:09:25 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:09:28 INFO [system-monitor] Health check passed
+2025-12-24 09:09:29 INFO [kubernetes] Health check passed
+2025-12-24 09:09:34 INFO [system-monitor] Connection established
+2025-12-24 09:09:37 INFO [payment-service] Cache refreshed
+2025-12-24 09:09:39 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:09:44 INFO [network] Health check passed
+2025-12-24 09:09:47 INFO [network] Health check passed
+2025-12-24 09:09:52 INFO [auth-service] Pod started
+2025-12-24 09:09:53 INFO [network] Request processed successfully
+2025-12-24 09:09:55 INFO [auth-service] User login successful
+2025-12-24 09:10:00 INFO [network] Request processed successfully
+2025-12-24 09:10:03 INFO [inventory-service] Connection established
+2025-12-24 09:10:04 INFO [network] Pod started
+2025-12-24 09:10:09 INFO [system-monitor] Request processed successfully
+2025-12-24 09:10:10 INFO [payment-service] Health check passed
+2025-12-24 09:10:11 INFO [auth-service] Connection established
+2025-12-24 09:10:16 INFO [auth-service] Cache refreshed
+2025-12-24 09:10:20 INFO [system-monitor] Health check passed
+2025-12-24 09:10:21 INFO [payment-service] Pod started
+2025-12-24 09:10:24 INFO [auth-service] Cache refreshed
+2025-12-24 09:10:27 INFO [order-service] Pod started
+2025-12-24 09:10:28 INFO [network] Retry successful
+2025-12-24 09:10:30 INFO [inventory-service] Health check passed
+2025-12-24 09:10:32 INFO [system-monitor] Retry successful
+2025-12-24 09:10:35 INFO [auth-service] Retry successful
+2025-12-24 09:10:36 INFO [order-service] Request processed successfully
+2025-12-24 09:10:40 WARNING [kubernetes] Memory usage exceeded threshold
+2025-12-24 09:10:45 INFO [payment-service] Pod started
+2025-12-24 09:10:48 INFO [kubernetes] Request processed successfully
+2025-12-24 09:10:53 INFO [network] Pod started
+2025-12-24 09:10:55 INFO [kubernetes] Health check passed
+2025-12-24 09:10:56 INFO [kubernetes] Cache refreshed
+2025-12-24 09:10:57 INFO [network] Health check passed
+2025-12-24 09:11:02 WARNING [inventory-service] Memory usage exceeded threshold
+2025-12-24 09:11:03 INFO [kubernetes] Pod started
+2025-12-24 09:11:07 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:11:09 INFO [order-service] Connection established
+2025-12-24 09:11:13 INFO [inventory-service] Connection established
+2025-12-24 09:11:15 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:11:17 INFO [auth-service] Request processed successfully
+2025-12-24 09:11:20 INFO [network] Health check passed
+2025-12-24 09:11:21 INFO [network] Pod started
+2025-12-24 09:11:25 INFO [auth-service] Pod started
+2025-12-24 09:11:27 INFO [auth-service] User login successful
+2025-12-24 09:11:30 INFO [kubernetes] Retry successful
+2025-12-24 09:11:31 INFO [network] Connection established
+2025-12-24 09:11:34 INFO [order-service] Health check passed
+2025-12-24 09:11:39 INFO [kubernetes] Cache refreshed
+2025-12-24 09:11:43 INFO [payment-service] Cache refreshed
+2025-12-24 09:11:48 INFO [payment-service] Request processed successfully
+2025-12-24 09:11:52 INFO [system-monitor] Pod started
+2025-12-24 09:11:55 INFO [payment-service] Pod started
+2025-12-24 09:11:57 INFO [auth-service] Pod started
+2025-12-24 09:11:59 INFO [system-monitor] Request processed successfully
+2025-12-24 09:12:01 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:12:05 INFO [system-monitor] Cache refreshed
+2025-12-24 09:12:09 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:12:14 ERROR [system-monitor] Authentication failed
+2025-12-24 09:12:17 INFO [inventory-service] Cache refreshed
+2025-12-24 09:12:22 INFO [network] User login successful
+2025-12-24 09:12:25 INFO [network] Health check passed
+2025-12-24 09:12:27 INFO [auth-service] Request processed successfully
+2025-12-24 09:12:31 INFO [network] User login successful
+2025-12-24 09:12:33 INFO [network] Pod started
+2025-12-24 09:12:35 INFO [network] Connection established
+2025-12-24 09:12:38 ERROR [auth-service] Failed after retries
+2025-12-24 09:12:41 INFO [kubernetes] Request processed successfully
+2025-12-24 09:12:46 INFO [payment-service] User login successful
+2025-12-24 09:12:47 INFO [payment-service] Retry successful
+2025-12-24 09:12:52 INFO [auth-service] Health check passed
+2025-12-24 09:12:56 INFO [order-service] Request processed successfully
+2025-12-24 09:13:00 ERROR [order-service] Service unavailable
+2025-12-24 09:13:01 INFO [system-monitor] Retry successful
+2025-12-24 09:13:05 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:13:06 INFO [network] Connection established
+2025-12-24 09:13:08 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:13:10 INFO [auth-service] Request processed successfully
+2025-12-24 09:13:13 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:13:17 INFO [payment-service] Request processed successfully
+2025-12-24 09:13:20 INFO [order-service] Health check passed
+2025-12-24 09:13:22 INFO [auth-service] Cache refreshed
+2025-12-24 09:13:26 INFO [system-monitor] Request processed successfully
+2025-12-24 09:13:29 INFO [auth-service] Connection established
+2025-12-24 09:13:30 INFO [kubernetes] Health check passed
+2025-12-24 09:13:32 INFO [inventory-service] Retry successful
+2025-12-24 09:13:36 INFO [payment-service] User login successful
+2025-12-24 09:13:40 INFO [system-monitor] Retry successful
+2025-12-24 09:13:41 INFO [auth-service] Request processed successfully
+2025-12-24 09:13:44 INFO [auth-service] Retry successful
+2025-12-24 09:13:49 INFO [payment-service] Connection established
+2025-12-24 09:13:52 INFO [payment-service] Connection established
+2025-12-24 09:13:55 INFO [kubernetes] Pod started
+2025-12-24 09:13:58 INFO [auth-service] Health check passed
+2025-12-24 09:14:03 INFO [auth-service] Pod started
+2025-12-24 09:14:04 INFO [network] Pod started
+2025-12-24 09:14:08 INFO [payment-service] Health check passed
+2025-12-24 09:14:10 INFO [system-monitor] Health check passed
+2025-12-24 09:14:13 INFO [system-monitor] Retry successful
+2025-12-24 09:14:16 INFO [order-service] Pod started
+2025-12-24 09:14:19 INFO [inventory-service] Cache refreshed
+2025-12-24 09:14:20 INFO [system-monitor] Cache refreshed
+2025-12-24 09:14:22 INFO [network] Health check passed
+2025-12-24 09:14:24 INFO [system-monitor] Request processed successfully
+2025-12-24 09:14:26 INFO [inventory-service] Cache refreshed
+2025-12-24 09:14:31 ERROR [payment-service] Failed after retries
+2025-12-24 09:14:33 INFO [kubernetes] Connection established
+2025-12-24 09:14:34 INFO [network] Connection established
+2025-12-24 09:14:39 INFO [auth-service] Cache refreshed
+2025-12-24 09:14:41 INFO [kubernetes] User login successful
+2025-12-24 09:14:46 INFO [network] Health check passed
+2025-12-24 09:14:47 INFO [order-service] Connection established
+2025-12-24 09:14:50 INFO [order-service] User login successful
+2025-12-24 09:14:52 INFO [auth-service] Request processed successfully
+2025-12-24 09:14:54 INFO [network] Health check passed
+2025-12-24 09:14:56 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:14:58 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:15:01 INFO [auth-service] User login successful
+2025-12-24 09:15:06 INFO [auth-service] Cache refreshed
+2025-12-24 09:15:10 INFO [system-monitor] Cache refreshed
+2025-12-24 09:15:12 INFO [network] Cache refreshed
+2025-12-24 09:15:17 ERROR [payment-service] Service unavailable
+2025-12-24 09:15:20 INFO [network] Cache refreshed
+2025-12-24 09:15:23 INFO [network] Pod started
+2025-12-24 09:15:24 WARNING [auth-service] Memory usage exceeded threshold
+2025-12-24 09:15:28 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:15:32 INFO [kubernetes] Request processed successfully
+2025-12-24 09:15:37 INFO [payment-service] Health check passed
+2025-12-24 09:15:40 INFO [inventory-service] Connection established
+2025-12-24 09:15:45 INFO [inventory-service] Retry successful
+2025-12-24 09:15:46 INFO [system-monitor] Request processed successfully
+2025-12-24 09:15:51 INFO [system-monitor] Retry successful
+2025-12-24 09:15:56 INFO [network] Request processed successfully
+2025-12-24 09:15:57 INFO [payment-service] Request processed successfully
+2025-12-24 09:16:02 INFO [network] Connection established
+2025-12-24 09:16:04 INFO [payment-service] User login successful
+2025-12-24 09:16:08 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:16:11 INFO [kubernetes] Health check passed
+2025-12-24 09:16:12 INFO [order-service] Connection established
+2025-12-24 09:16:15 INFO [system-monitor] Health check passed
+2025-12-24 09:16:16 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:16:21 INFO [system-monitor] Retry successful
+2025-12-24 09:16:26 INFO [auth-service] Health check passed
+2025-12-24 09:16:28 INFO [kubernetes] Pod started
+2025-12-24 09:16:31 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:16:33 INFO [order-service] Cache refreshed
+2025-12-24 09:16:37 INFO [auth-service] Cache refreshed
+2025-12-24 09:16:41 INFO [payment-service] Request processed successfully
+2025-12-24 09:16:46 INFO [system-monitor] Request processed successfully
+2025-12-24 09:16:51 INFO [auth-service] Pod started
+2025-12-24 09:16:54 INFO [kubernetes] Connection established
+2025-12-24 09:16:57 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:16:59 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:17:04 INFO [kubernetes] Pod started
+2025-12-24 09:17:08 ERROR [inventory-service] Failed after retries
+2025-12-24 09:17:12 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:17:15 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:17:20 INFO [order-service] Cache refreshed
+2025-12-24 09:17:22 INFO [auth-service] Retry successful
+2025-12-24 09:17:23 INFO [system-monitor] Health check passed
+2025-12-24 09:17:27 INFO [order-service] Cache refreshed
+2025-12-24 09:17:31 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:17:34 INFO [order-service] Request processed successfully
+2025-12-24 09:17:35 INFO [inventory-service] Health check passed
+2025-12-24 09:17:36 INFO [kubernetes] Connection established
+2025-12-24 09:17:38 INFO [kubernetes] Connection established
+2025-12-24 09:17:43 INFO [inventory-service] Request processed successfully
+2025-12-24 09:17:44 INFO [kubernetes] Health check passed
+2025-12-24 09:17:49 INFO [system-monitor] Retry successful
+2025-12-24 09:17:54 INFO [order-service] User login successful
+2025-12-24 09:17:59 INFO [kubernetes] User login successful
+2025-12-24 09:18:03 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:18:07 INFO [order-service] Request processed successfully
+2025-12-24 09:18:11 INFO [payment-service] Request processed successfully
+2025-12-24 09:18:12 INFO [auth-service] Connection established
+2025-12-24 09:18:15 INFO [kubernetes] Pod started
+2025-12-24 09:18:19 INFO [kubernetes] Health check passed
+2025-12-24 09:18:23 INFO [inventory-service] Pod started
+2025-12-24 09:18:25 INFO [network] Health check passed
+2025-12-24 09:18:26 INFO [network] Health check passed
+2025-12-24 09:18:30 INFO [network] Connection established
+2025-12-24 09:18:33 INFO [inventory-service] User login successful
+2025-12-24 09:18:38 INFO [payment-service] Cache refreshed
+2025-12-24 09:18:39 INFO [inventory-service] Pod started
+2025-12-24 09:18:40 INFO [system-monitor] Cache refreshed
+2025-12-24 09:18:42 INFO [network] Retry successful
+2025-12-24 09:18:45 INFO [order-service] Retry successful
+2025-12-24 09:18:46 INFO [inventory-service] Request processed successfully
+2025-12-24 09:18:48 INFO [auth-service] User login successful
+2025-12-24 09:18:49 INFO [order-service] Request processed successfully
+2025-12-24 09:18:54 INFO [auth-service] Health check passed
+2025-12-24 09:18:58 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:19:00 INFO [payment-service] Cache refreshed
+2025-12-24 09:19:03 INFO [network] User login successful
+2025-12-24 09:19:04 INFO [order-service] User login successful
+2025-12-24 09:19:09 INFO [kubernetes] Pod started
+2025-12-24 09:19:12 INFO [network] Autoscaling event triggered
+2025-12-24 09:19:17 INFO [system-monitor] Request processed successfully
+2025-12-24 09:19:20 INFO [system-monitor] Request processed successfully
+2025-12-24 09:19:25 INFO [network] Cache refreshed
+2025-12-24 09:19:29 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:19:31 INFO [auth-service] User login successful
+2025-12-24 09:19:33 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:19:34 INFO [payment-service] Health check passed
+2025-12-24 09:19:35 INFO [network] Pod started
+2025-12-24 09:19:36 INFO [payment-service] User login successful
+2025-12-24 09:19:40 INFO [network] Connection established
+2025-12-24 09:19:42 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:19:45 INFO [network] Pod started
+2025-12-24 09:19:46 INFO [order-service] User login successful
+2025-12-24 09:19:47 INFO [system-monitor] Request processed successfully
+2025-12-24 09:19:51 INFO [auth-service] Request processed successfully
+2025-12-24 09:19:54 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:19:57 INFO [inventory-service] Connection established
+2025-12-24 09:19:59 INFO [kubernetes] Health check passed
+2025-12-24 09:20:00 INFO [auth-service] Pod started
+2025-12-24 09:20:01 INFO [kubernetes] Retry successful
+2025-12-24 09:20:05 INFO [system-monitor] Cache refreshed
+2025-12-24 09:20:07 INFO [order-service] Pod started
+2025-12-24 09:20:11 INFO [payment-service] Cache refreshed
+2025-12-24 09:20:12 INFO [network] Retry successful
+2025-12-24 09:20:13 INFO [kubernetes] User login successful
+2025-12-24 09:20:18 INFO [inventory-service] Pod started
+2025-12-24 09:20:21 INFO [network] Cache refreshed
+2025-12-24 09:20:25 INFO [kubernetes] Request processed successfully
+2025-12-24 09:20:26 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:20:30 INFO [payment-service] User login successful
+2025-12-24 09:20:32 INFO [order-service] User login successful
+2025-12-24 09:20:36 INFO [kubernetes] Retry successful
+2025-12-24 09:20:38 INFO [auth-service] Connection established
+2025-12-24 09:20:39 ERROR [kubernetes] Authentication failed
+2025-12-24 09:20:41 INFO [order-service] Cache refreshed
+2025-12-24 09:20:43 INFO [inventory-service] Pod started
+2025-12-24 09:20:44 INFO [network] Request processed successfully
+2025-12-24 09:20:47 INFO [network] Cache refreshed
+2025-12-24 09:20:48 INFO [system-monitor] Cache refreshed
+2025-12-24 09:20:53 INFO [payment-service] Request processed successfully
+2025-12-24 09:20:56 INFO [inventory-service] Pod started
+2025-12-24 09:21:00 INFO [inventory-service] Connection established
+2025-12-24 09:21:01 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:21:03 INFO [kubernetes] Pod started
+2025-12-24 09:21:07 INFO [inventory-service] Pod started
+2025-12-24 09:21:10 INFO [network] Autoscaling event triggered
+2025-12-24 09:21:12 INFO [kubernetes] Cache refreshed
+2025-12-24 09:21:15 INFO [network] Cache refreshed
+2025-12-24 09:21:19 INFO [order-service] Retry successful
+2025-12-24 09:21:23 INFO [network] Retry successful
+2025-12-24 09:21:24 INFO [auth-service] Pod started
+2025-12-24 09:21:25 INFO [kubernetes] Cache refreshed
+2025-12-24 09:21:27 WARNING [kubernetes] Memory usage exceeded threshold
+2025-12-24 09:21:32 INFO [inventory-service] Retry successful
+2025-12-24 09:21:36 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:21:37 INFO [inventory-service] Request processed successfully
+2025-12-24 09:21:41 INFO [network] Connection established
+2025-12-24 09:21:46 INFO [network] User login successful
+2025-12-24 09:21:47 INFO [kubernetes] Connection established
+2025-12-24 09:21:50 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:21:53 WARNING [system-monitor] Memory usage exceeded threshold
+2025-12-24 09:21:56 WARNING [kubernetes] Disk usage exceeded threshold
+2025-12-24 09:21:57 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:21:59 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:22:04 INFO [order-service] Connection established
+2025-12-24 09:22:06 INFO [network] Connection established
+2025-12-24 09:22:07 INFO [kubernetes] Pod started
+2025-12-24 09:22:09 INFO [inventory-service] Connection established
+2025-12-24 09:22:12 INFO [inventory-service] Request processed successfully
+2025-12-24 09:22:15 INFO [kubernetes] Request processed successfully
+2025-12-24 09:22:17 INFO [inventory-service] Connection established
+2025-12-24 09:22:19 INFO [payment-service] Connection established
+2025-12-24 09:22:20 INFO [network] Pod started
+2025-12-24 09:22:22 ERROR [network] Service unavailable
+2025-12-24 09:22:27 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:22:31 INFO [order-service] Cache refreshed
+2025-12-24 09:22:34 INFO [system-monitor] User login successful
+2025-12-24 09:22:39 INFO [inventory-service] User login successful
+2025-12-24 09:22:41 INFO [payment-service] Health check passed
+2025-12-24 09:22:43 INFO [system-monitor] Pod started
+2025-12-24 09:22:46 INFO [order-service] Cache refreshed
+2025-12-24 09:22:51 INFO [kubernetes] Health check passed
+2025-12-24 09:22:52 INFO [kubernetes] Retry successful
+2025-12-24 09:22:53 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:22:55 INFO [inventory-service] Request processed successfully
+2025-12-24 09:22:57 INFO [network] Pod started
+2025-12-24 09:22:58 INFO [network] Cache refreshed
+2025-12-24 09:22:59 INFO [kubernetes] Health check passed
+2025-12-24 09:23:01 INFO [payment-service] Request processed successfully
+2025-12-24 09:23:05 WARNING [payment-service] Disk usage exceeded threshold
+2025-12-24 09:23:06 INFO [system-monitor] Retry successful
+2025-12-24 09:23:09 INFO [order-service] Cache refreshed
+2025-12-24 09:23:11 INFO [order-service] Cache refreshed
+2025-12-24 09:23:15 INFO [network] Health check passed
+2025-12-24 09:23:17 INFO [kubernetes] Cache refreshed
+2025-12-24 09:23:21 WARNING [auth-service] Memory usage exceeded threshold
+2025-12-24 09:23:24 INFO [inventory-service] Request processed successfully
+2025-12-24 09:23:27 INFO [kubernetes] Pod started
+2025-12-24 09:23:28 INFO [network] User login successful
+2025-12-24 09:23:31 INFO [payment-service] Retry successful
+2025-12-24 09:23:32 INFO [network] Autoscaling event triggered
+2025-12-24 09:23:36 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:23:40 WARNING [system-monitor] Slow response detected
+2025-12-24 09:23:45 INFO [system-monitor] Retry successful
+2025-12-24 09:23:46 INFO [payment-service] Request processed successfully
+2025-12-24 09:23:47 INFO [order-service] Retry successful
+2025-12-24 09:23:48 INFO [auth-service] Request processed successfully
+2025-12-24 09:23:53 INFO [network] Request processed successfully
+2025-12-24 09:23:54 INFO [auth-service] Request processed successfully
+2025-12-24 09:23:59 INFO [auth-service] User login successful
+2025-12-24 09:24:02 INFO [order-service] Pod started
+2025-12-24 09:24:04 INFO [inventory-service] Health check passed
+2025-12-24 09:24:05 INFO [order-service] Connection established
+2025-12-24 09:24:10 INFO [payment-service] Health check passed
+2025-12-24 09:24:13 INFO [kubernetes] Request processed successfully
+2025-12-24 09:24:16 INFO [payment-service] User login successful
+2025-12-24 09:24:20 INFO [system-monitor] Connection established
+2025-12-24 09:24:24 ERROR [payment-service] Pod crashed due to OOM
+2025-12-24 09:24:25 INFO [inventory-service] Connection established
+2025-12-24 09:24:30 INFO [kubernetes] Request processed successfully
+2025-12-24 09:24:32 INFO [inventory-service] Connection established
+2025-12-24 09:24:34 INFO [auth-service] User login successful
+2025-12-24 09:24:38 INFO [system-monitor] Cache refreshed
+2025-12-24 09:24:42 INFO [inventory-service] Connection established
+2025-12-24 09:24:43 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:24:44 INFO [order-service] Request processed successfully
+2025-12-24 09:24:47 INFO [payment-service] User login successful
+2025-12-24 09:24:51 INFO [order-service] Health check passed
+2025-12-24 09:24:55 INFO [network] Health check passed
+2025-12-24 09:24:56 INFO [kubernetes] Pod started
+2025-12-24 09:24:58 INFO [auth-service] Cache refreshed
+2025-12-24 09:25:02 INFO [order-service] Pod started
+2025-12-24 09:25:03 INFO [payment-service] Retry successful
+2025-12-24 09:25:04 INFO [auth-service] Cache refreshed
+2025-12-24 09:25:06 INFO [payment-service] User login successful
+2025-12-24 09:25:08 INFO [auth-service] User login successful
+2025-12-24 09:25:09 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:25:11 INFO [kubernetes] Connection established
+2025-12-24 09:25:12 INFO [system-monitor] Health check passed
+2025-12-24 09:25:14 INFO [auth-service] Connection established
+2025-12-24 09:25:17 INFO [order-service] User login successful
+2025-12-24 09:25:18 INFO [network] Cache refreshed
+2025-12-24 09:25:20 INFO [order-service] Connection established
+2025-12-24 09:25:21 INFO [network] Pod started
+2025-12-24 09:25:23 INFO [order-service] User login successful
+2025-12-24 09:25:24 INFO [network] Connection established
+2025-12-24 09:25:25 INFO [network] User login successful
+2025-12-24 09:25:30 INFO [order-service] Request processed successfully
+2025-12-24 09:25:35 INFO [system-monitor] Request processed successfully
+2025-12-24 09:25:38 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:25:41 INFO [inventory-service] Health check passed
+2025-12-24 09:25:46 INFO [payment-service] Connection established
+2025-12-24 09:25:51 INFO [inventory-service] Health check passed
+2025-12-24 09:25:53 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:25:58 INFO [auth-service] Connection established
+2025-12-24 09:26:00 INFO [kubernetes] Cache refreshed
+2025-12-24 09:26:01 INFO [order-service] User login successful
+2025-12-24 09:26:05 INFO [inventory-service] Connection established
+2025-12-24 09:26:06 INFO [auth-service] Retry successful
+2025-12-24 09:26:07 INFO [order-service] Request processed successfully
+2025-12-24 09:26:08 INFO [payment-service] User login successful
+2025-12-24 09:26:13 INFO [inventory-service] Retry successful
+2025-12-24 09:26:18 INFO [kubernetes] Health check passed
+2025-12-24 09:26:21 WARNING [system-monitor] Memory usage exceeded threshold
+2025-12-24 09:26:24 WARNING [kubernetes] Memory usage exceeded threshold
+2025-12-24 09:26:29 INFO [network] Retry successful
+2025-12-24 09:26:33 INFO [auth-service] Retry successful
+2025-12-24 09:26:36 INFO [inventory-service] Retry successful
+2025-12-24 09:26:38 INFO [kubernetes] User login successful
+2025-12-24 09:26:39 INFO [order-service] Cache refreshed
+2025-12-24 09:26:41 INFO [kubernetes] Request processed successfully
+2025-12-24 09:26:43 INFO [auth-service] Connection established
+2025-12-24 09:26:47 INFO [order-service] Connection established
+2025-12-24 09:26:48 INFO [order-service] Health check passed
+2025-12-24 09:26:52 INFO [inventory-service] Request processed successfully
+2025-12-24 09:26:56 INFO [auth-service] Request processed successfully
+2025-12-24 09:27:00 INFO [kubernetes] Request processed successfully
+2025-12-24 09:27:02 INFO [kubernetes] User login successful
+2025-12-24 09:27:06 INFO [system-monitor] User login successful
+2025-12-24 09:27:08 INFO [network] User login successful
+2025-12-24 09:27:13 INFO [inventory-service] Cache refreshed
+2025-12-24 09:27:14 INFO [order-service] Cache refreshed
+2025-12-24 09:27:17 INFO [system-monitor] Pod started
+2025-12-24 09:27:18 INFO [order-service] Cache refreshed
+2025-12-24 09:27:22 INFO [system-monitor] Health check passed
+2025-12-24 09:27:24 INFO [inventory-service] Connection established
+2025-12-24 09:27:29 INFO [network] Retry successful
+2025-12-24 09:27:31 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:27:33 INFO [auth-service] Health check passed
+2025-12-24 09:27:35 INFO [auth-service] Health check passed
+2025-12-24 09:27:38 INFO [kubernetes] Connection established
+2025-12-24 09:27:43 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:27:48 INFO [system-monitor] Retry successful
+2025-12-24 09:27:49 INFO [kubernetes] Cache refreshed
+2025-12-24 09:27:50 INFO [system-monitor] Request processed successfully
+2025-12-24 09:27:54 INFO [auth-service] Request processed successfully
+2025-12-24 09:27:57 INFO [system-monitor] Pod started
+2025-12-24 09:27:58 INFO [order-service] Cache refreshed
+2025-12-24 09:28:03 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:28:07 INFO [inventory-service] User login successful
+2025-12-24 09:28:10 INFO [auth-service] Cache refreshed
+2025-12-24 09:28:12 INFO [system-monitor] Pod started
+2025-12-24 09:28:16 INFO [order-service] Connection established
+2025-12-24 09:28:18 INFO [kubernetes] Pod started
+2025-12-24 09:28:20 INFO [inventory-service] Health check passed
+2025-12-24 09:28:25 INFO [order-service] Connection established
+2025-12-24 09:28:27 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:28:28 INFO [system-monitor] Connection established
+2025-12-24 09:28:30 INFO [system-monitor] Health check passed
+2025-12-24 09:28:34 INFO [network] Connection established
+2025-12-24 09:28:37 INFO [system-monitor] Retry successful
+2025-12-24 09:28:38 WARNING [system-monitor] Slow response detected
+2025-12-24 09:28:39 INFO [payment-service] Cache refreshed
+2025-12-24 09:28:43 INFO [auth-service] User login successful
+2025-12-24 09:28:44 INFO [network] Autoscaling event triggered
+2025-12-24 09:28:49 WARNING [system-monitor] Memory usage exceeded threshold
+2025-12-24 09:28:51 INFO [network] User login successful
+2025-12-24 09:28:54 WARNING [order-service] Disk usage exceeded threshold
+2025-12-24 09:28:59 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:29:00 INFO [network] Autoscaling event triggered
+2025-12-24 09:29:05 INFO [order-service] Cache refreshed
+2025-12-24 09:29:06 INFO [network] Request processed successfully
+2025-12-24 09:29:07 INFO [network] Retry successful
+2025-12-24 09:29:12 INFO [kubernetes] Health check passed
+2025-12-24 09:29:15 INFO [kubernetes] User login successful
+2025-12-24 09:29:19 INFO [kubernetes] Request processed successfully
+2025-12-24 09:29:21 INFO [kubernetes] Request processed successfully
+2025-12-24 09:29:25 INFO [order-service] User login successful
+2025-12-24 09:29:30 INFO [kubernetes] Health check passed
+2025-12-24 09:29:35 INFO [payment-service] Health check passed
+2025-12-24 09:29:38 INFO [network] User login successful
+2025-12-24 09:29:39 INFO [kubernetes] Health check passed
+2025-12-24 09:29:40 INFO [auth-service] User login successful
+2025-12-24 09:29:42 INFO [system-monitor] Request processed successfully
+2025-12-24 09:29:44 INFO [payment-service] Retry successful
+2025-12-24 09:29:47 INFO [inventory-service] Connection established
+2025-12-24 09:29:52 INFO [kubernetes] Cache refreshed
+2025-12-24 09:29:57 INFO [inventory-service] Pod started
+2025-12-24 09:30:02 INFO [kubernetes] Retry successful
+2025-12-24 09:30:03 INFO [network] Health check passed
+2025-12-24 09:30:06 INFO [kubernetes] Connection established
+2025-12-24 09:30:11 INFO [inventory-service] User login successful
+2025-12-24 09:30:12 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:30:17 INFO [payment-service] Health check passed
+2025-12-24 09:30:22 INFO [kubernetes] Request processed successfully
+2025-12-24 09:30:25 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:30:29 ERROR [kubernetes] Pod crashed due to OOM
+2025-12-24 09:30:31 INFO [order-service] Cache refreshed
+2025-12-24 09:30:34 INFO [network] Health check passed
+2025-12-24 09:30:37 INFO [payment-service] Health check passed
+2025-12-24 09:30:42 INFO [kubernetes] User login successful
+2025-12-24 09:30:45 INFO [system-monitor] Request processed successfully
+2025-12-24 09:30:49 INFO [auth-service] User login successful
+2025-12-24 09:30:50 INFO [inventory-service] Health check passed
+2025-12-24 09:30:52 INFO [kubernetes] User login successful
+2025-12-24 09:30:57 INFO [auth-service] Pod started
+2025-12-24 09:31:01 INFO [kubernetes] Connection established
+2025-12-24 09:31:06 INFO [payment-service] Retry successful
+2025-12-24 09:31:10 INFO [payment-service] User login successful
+2025-12-24 09:31:11 INFO [order-service] Cache refreshed
+2025-12-24 09:31:12 WARNING [network] Slow response detected
+2025-12-24 09:31:15 INFO [payment-service] Pod started
+2025-12-24 09:31:16 WARNING [system-monitor] Memory usage exceeded threshold
+2025-12-24 09:31:21 INFO [network] Request processed successfully
+2025-12-24 09:31:22 INFO [order-service] Retry successful
+2025-12-24 09:31:23 INFO [inventory-service] Cache refreshed
+2025-12-24 09:31:24 INFO [kubernetes] Request processed successfully
+2025-12-24 09:31:28 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:31:33 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:31:37 INFO [kubernetes] Pod started
+2025-12-24 09:31:41 INFO [kubernetes] Retry successful
+2025-12-24 09:31:43 INFO [auth-service] Request processed successfully
+2025-12-24 09:31:44 INFO [auth-service] Connection established
+2025-12-24 09:31:47 INFO [kubernetes] Connection established
+2025-12-24 09:31:51 INFO [payment-service] Pod started
+2025-12-24 09:31:52 INFO [order-service] Health check passed
+2025-12-24 09:31:53 INFO [network] Autoscaling event triggered
+2025-12-24 09:31:55 INFO [order-service] User login successful
+2025-12-24 09:31:56 INFO [kubernetes] Health check passed
+2025-12-24 09:32:01 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:32:04 INFO [order-service] Connection established
+2025-12-24 09:32:05 INFO [inventory-service] Cache refreshed
+2025-12-24 09:32:06 INFO [inventory-service] Cache refreshed
+2025-12-24 09:32:08 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:32:11 INFO [auth-service] Health check passed
+2025-12-24 09:32:15 INFO [inventory-service] Request processed successfully
+2025-12-24 09:32:20 INFO [network] Connection established
+2025-12-24 09:32:23 INFO [system-monitor] Connection established
+2025-12-24 09:32:27 INFO [system-monitor] Cache refreshed
+2025-12-24 09:32:31 INFO [network] Health check passed
+2025-12-24 09:32:34 INFO [kubernetes] Health check passed
+2025-12-24 09:32:38 INFO [inventory-service] Health check passed
+2025-12-24 09:32:43 INFO [auth-service] Cache refreshed
+2025-12-24 09:32:47 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:32:51 INFO [system-monitor] Pod started
+2025-12-24 09:32:52 INFO [network] User login successful
+2025-12-24 09:32:56 INFO [order-service] Pod started
+2025-12-24 09:32:57 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:32:59 INFO [payment-service] Connection established
+2025-12-24 09:33:04 INFO [kubernetes] Health check passed
+2025-12-24 09:33:05 INFO [network] Pod started
+2025-12-24 09:33:07 INFO [inventory-service] Pod started
+2025-12-24 09:33:12 INFO [system-monitor] Pod started
+2025-12-24 09:33:16 INFO [system-monitor] User login successful
+2025-12-24 09:33:19 INFO [payment-service] Health check passed
+2025-12-24 09:33:20 INFO [auth-service] User login successful
+2025-12-24 09:33:24 INFO [kubernetes] User login successful
+2025-12-24 09:33:25 INFO [order-service] Pod started
+2025-12-24 09:33:28 WARNING [kubernetes] Slow response detected
+2025-12-24 09:33:30 INFO [network] Pod started
+2025-12-24 09:33:33 INFO [inventory-service] Retry successful
+2025-12-24 09:33:35 INFO [auth-service] Pod started
+2025-12-24 09:33:40 INFO [order-service] Request processed successfully
+2025-12-24 09:33:45 INFO [payment-service] Connection established
+2025-12-24 09:33:49 INFO [inventory-service] Health check passed
+2025-12-24 09:33:50 INFO [order-service] Request processed successfully
+2025-12-24 09:33:55 INFO [system-monitor] Request processed successfully
+2025-12-24 09:33:56 INFO [system-monitor] Pod started
+2025-12-24 09:34:00 INFO [system-monitor] Connection established
+2025-12-24 09:34:04 INFO [network] Pod started
+2025-12-24 09:34:09 INFO [system-monitor] Retry successful
+2025-12-24 09:34:10 INFO [network] Cache refreshed
+2025-12-24 09:34:11 WARNING [auth-service] Disk usage exceeded threshold
+2025-12-24 09:34:16 WARNING [kubernetes] Disk usage exceeded threshold
+2025-12-24 09:34:17 INFO [order-service] Pod started
+2025-12-24 09:34:18 INFO [auth-service] Health check passed
+2025-12-24 09:34:19 INFO [payment-service] Connection established
+2025-12-24 09:34:20 INFO [order-service] Request processed successfully
+2025-12-24 09:34:22 INFO [order-service] User login successful
+2025-12-24 09:34:27 INFO [payment-service] Cache refreshed
+2025-12-24 09:34:31 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:34:35 INFO [auth-service] Request processed successfully
+2025-12-24 09:34:37 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:34:42 INFO [kubernetes] Health check passed
+2025-12-24 09:34:46 INFO [kubernetes] User login successful
+2025-12-24 09:34:49 INFO [network] Health check passed
+2025-12-24 09:34:54 INFO [network] Cache refreshed
+2025-12-24 09:34:56 INFO [network] Request processed successfully
+2025-12-24 09:34:57 INFO [auth-service] Health check passed
+2025-12-24 09:34:59 INFO [order-service] User login successful
+2025-12-24 09:35:03 INFO [network] Retry successful
+2025-12-24 09:35:04 WARNING [auth-service] High CPU utilization
+2025-12-24 09:35:08 INFO [auth-service] Connection established
+2025-12-24 09:35:09 INFO [inventory-service] Cache refreshed
+2025-12-24 09:35:13 INFO [payment-service] Request processed successfully
+2025-12-24 09:35:17 INFO [system-monitor] Request processed successfully
+2025-12-24 09:35:20 INFO [kubernetes] Health check passed
+2025-12-24 09:35:23 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:35:27 INFO [network] Pod started
+2025-12-24 09:35:30 INFO [network] Pod started
+2025-12-24 09:35:35 INFO [payment-service] Pod started
+2025-12-24 09:35:39 WARNING [system-monitor] Slow response detected
+2025-12-24 09:35:43 INFO [payment-service] Cache refreshed
+2025-12-24 09:35:46 INFO [inventory-service] Health check passed
+2025-12-24 09:35:50 WARNING [inventory-service] Disk usage exceeded threshold
+2025-12-24 09:35:51 WARNING [system-monitor] Disk usage exceeded threshold
+2025-12-24 09:35:55 INFO [auth-service] User login successful
+2025-12-24 09:35:57 INFO [inventory-service] Retry successful
+2025-12-24 09:36:00 WARNING [payment-service] Disk usage exceeded threshold
+2025-12-24 09:36:05 INFO [network] Cache refreshed
+2025-12-24 09:36:08 INFO [system-monitor] Health check passed
+2025-12-24 09:36:13 INFO [auth-service] Health check passed
+2025-12-24 09:36:15 INFO [payment-service] User login successful
+2025-12-24 09:36:18 INFO [order-service] Pod started
+2025-12-24 09:36:22 INFO [network] Connection established
+2025-12-24 09:36:27 INFO [network] Autoscaling event triggered
+2025-12-24 09:36:31 ERROR [auth-service] Service unavailable
+2025-12-24 09:36:32 INFO [network] Cache refreshed
+2025-12-24 09:36:33 INFO [inventory-service] Pod started
+2025-12-24 09:36:35 INFO [system-monitor] Cache refreshed
+2025-12-24 09:36:39 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:36:41 INFO [auth-service] Retry successful
+2025-12-24 09:36:42 INFO [payment-service] Health check passed
+2025-12-24 09:36:46 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:36:50 INFO [order-service] Request processed successfully
+2025-12-24 09:36:52 INFO [order-service] Retry successful
+2025-12-24 09:36:54 INFO [network] Retry successful
+2025-12-24 09:36:59 INFO [network] Autoscaling event triggered
+2025-12-24 09:37:00 INFO [auth-service] Connection established
+2025-12-24 09:37:02 INFO [inventory-service] Health check passed
+2025-12-24 09:37:03 INFO [auth-service] Health check passed
+2025-12-24 09:37:04 INFO [payment-service] Retry successful
+2025-12-24 09:37:06 INFO [inventory-service] Pod started
+2025-12-24 09:37:07 INFO [auth-service] Request processed successfully
+2025-12-24 09:37:11 INFO [auth-service] Connection established
+2025-12-24 09:37:12 INFO [network] Autoscaling event triggered
+2025-12-24 09:37:16 INFO [auth-service] Request processed successfully
+2025-12-24 09:37:19 INFO [network] Request processed successfully
+2025-12-24 09:37:22 INFO [inventory-service] Pod started
+2025-12-24 09:37:24 INFO [inventory-service] Retry successful
+2025-12-24 09:37:25 INFO [auth-service] Request processed successfully
+2025-12-24 09:37:29 INFO [auth-service] Retry successful
+2025-12-24 09:37:31 INFO [network] Retry successful
+2025-12-24 09:37:34 INFO [payment-service] Pod started
+2025-12-24 09:37:36 INFO [network] Request processed successfully
+2025-12-24 09:37:38 INFO [network] Autoscaling event triggered
+2025-12-24 09:37:39 INFO [kubernetes] Cache refreshed
+2025-12-24 09:37:40 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:37:43 INFO [order-service] User login successful
+2025-12-24 09:37:48 INFO [payment-service] Health check passed
+2025-12-24 09:37:51 INFO [network] Request processed successfully
+2025-12-24 09:37:53 INFO [payment-service] Request processed successfully
+2025-12-24 09:37:58 INFO [system-monitor] Pod started
+2025-12-24 09:38:00 WARNING [auth-service] Disk usage exceeded threshold
+2025-12-24 09:38:02 INFO [order-service] Connection established
+2025-12-24 09:38:05 INFO [inventory-service] Cache refreshed
+2025-12-24 09:38:08 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:38:10 INFO [kubernetes] Request processed successfully
+2025-12-24 09:38:12 INFO [kubernetes] Connection established
+2025-12-24 09:38:13 INFO [inventory-service] User login successful
+2025-12-24 09:38:18 INFO [network] Pod started
+2025-12-24 09:38:21 INFO [network] Autoscaling event triggered
+2025-12-24 09:38:26 INFO [payment-service] User login successful
+2025-12-24 09:38:28 WARNING [payment-service] Slow response detected
+2025-12-24 09:38:31 INFO [order-service] Request processed successfully
+2025-12-24 09:38:32 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:38:33 INFO [network] Autoscaling event triggered
+2025-12-24 09:38:37 INFO [kubernetes] Health check passed
+2025-12-24 09:38:38 INFO [payment-service] Request processed successfully
+2025-12-24 09:38:43 INFO [payment-service] Health check passed
+2025-12-24 09:38:47 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:38:49 INFO [payment-service] Cache refreshed
+2025-12-24 09:38:50 INFO [payment-service] Health check passed
+2025-12-24 09:38:52 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:38:57 INFO [auth-service] Pod started
+2025-12-24 09:39:01 INFO [auth-service] Cache refreshed
+2025-12-24 09:39:05 INFO [payment-service] User login successful
+2025-12-24 09:39:08 INFO [payment-service] Retry successful
+2025-12-24 09:39:10 ERROR [kubernetes] Connection reset by peer
+2025-12-24 09:39:11 INFO [kubernetes] Pod started
+2025-12-24 09:39:15 INFO [payment-service] Connection established
+2025-12-24 09:39:16 INFO [kubernetes] User login successful
+2025-12-24 09:39:20 INFO [auth-service] Cache refreshed
+2025-12-24 09:39:25 INFO [payment-service] Pod started
+2025-12-24 09:39:30 INFO [order-service] Connection established
+2025-12-24 09:39:34 INFO [order-service] Health check passed
+2025-12-24 09:39:39 INFO [kubernetes] Health check passed
+2025-12-24 09:39:44 INFO [order-service] Request processed successfully
+2025-12-24 09:39:49 INFO [auth-service] Cache refreshed
+2025-12-24 09:39:53 INFO [system-monitor] User login successful
+2025-12-24 09:39:54 INFO [payment-service] Pod started
+2025-12-24 09:39:58 INFO [system-monitor] Retry successful
+2025-12-24 09:40:02 INFO [auth-service] Retry successful
+2025-12-24 09:40:04 INFO [kubernetes] Request processed successfully
+2025-12-24 09:40:07 INFO [kubernetes] Cache refreshed
+2025-12-24 09:40:08 INFO [system-monitor] Cache refreshed
+2025-12-24 09:40:13 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:40:17 INFO [system-monitor] User login successful
+2025-12-24 09:40:20 INFO [system-monitor] Pod started
+2025-12-24 09:40:24 INFO [system-monitor] Health check passed
+2025-12-24 09:40:25 INFO [order-service] Pod started
+2025-12-24 09:40:29 INFO [kubernetes] Request processed successfully
+2025-12-24 09:40:30 INFO [system-monitor] Health check passed
+2025-12-24 09:40:35 INFO [network] User login successful
+2025-12-24 09:40:39 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:40:44 INFO [order-service] User login successful
+2025-12-24 09:40:49 INFO [payment-service] Request processed successfully
+2025-12-24 09:40:50 INFO [system-monitor] Health check passed
+2025-12-24 09:40:52 INFO [payment-service] Retry successful
+2025-12-24 09:40:54 INFO [payment-service] Cache refreshed
+2025-12-24 09:40:56 INFO [order-service] Connection established
+2025-12-24 09:40:57 INFO [inventory-service] Pod started
+2025-12-24 09:41:02 ERROR [system-monitor] Service unavailable
+2025-12-24 09:41:04 WARNING [kubernetes] High CPU utilization
+2025-12-24 09:41:08 INFO [inventory-service] Cache refreshed
+2025-12-24 09:41:12 INFO [system-monitor] Cache refreshed
+2025-12-24 09:41:14 INFO [payment-service] Retry successful
+2025-12-24 09:41:17 INFO [kubernetes] Pod started
+2025-12-24 09:41:22 INFO [network] Pod started
+2025-12-24 09:41:26 INFO [payment-service] Connection established
+2025-12-24 09:41:31 INFO [kubernetes] Retry successful
+2025-12-24 09:41:36 INFO [inventory-service] Request processed successfully
+2025-12-24 09:41:39 INFO [kubernetes] Pod started
+2025-12-24 09:41:40 INFO [payment-service] Connection established
+2025-12-24 09:41:41 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:41:44 INFO [payment-service] User login successful
+2025-12-24 09:41:49 INFO [network] Pod started
+2025-12-24 09:41:54 INFO [payment-service] Retry successful
+2025-12-24 09:41:56 INFO [auth-service] Request processed successfully
+2025-12-24 09:42:01 INFO [kubernetes] Pod started
+2025-12-24 09:42:04 INFO [order-service] Retry successful
+2025-12-24 09:42:07 INFO [system-monitor] User login successful
+2025-12-24 09:42:09 INFO [network] Retry successful
+2025-12-24 09:42:11 INFO [auth-service] Cache refreshed
+2025-12-24 09:42:15 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:42:16 INFO [payment-service] Connection established
+2025-12-24 09:42:20 INFO [network] Connection established
+2025-12-24 09:42:21 INFO [inventory-service] Health check passed
+2025-12-24 09:42:22 INFO [order-service] Request processed successfully
+2025-12-24 09:42:25 WARNING [network] High CPU utilization
+2025-12-24 09:42:30 INFO [auth-service] Retry successful
+2025-12-24 09:42:33 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:42:35 INFO [order-service] User login successful
+2025-12-24 09:42:39 INFO [auth-service] User login successful
+2025-12-24 09:42:40 INFO [inventory-service] Pod started
+2025-12-24 09:42:42 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:42:47 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:42:50 INFO [system-monitor] Pod started
+2025-12-24 09:42:51 INFO [inventory-service] Request processed successfully
+2025-12-24 09:42:52 INFO [payment-service] Health check passed
+2025-12-24 09:42:53 INFO [network] Autoscaling event triggered
+2025-12-24 09:42:55 INFO [kubernetes] Pod started
+2025-12-24 09:42:56 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:42:59 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:43:04 INFO [system-monitor] Cache refreshed
+2025-12-24 09:43:05 INFO [payment-service] Retry successful
+2025-12-24 09:43:08 INFO [order-service] Request processed successfully
+2025-12-24 09:43:11 INFO [order-service] Retry successful
+2025-12-24 09:43:13 INFO [order-service] Cache refreshed
+2025-12-24 09:43:18 INFO [system-monitor] Cache refreshed
+2025-12-24 09:43:21 WARNING [kubernetes] Memory usage exceeded threshold
+2025-12-24 09:43:25 INFO [inventory-service] User login successful
+2025-12-24 09:43:30 INFO [auth-service] Cache refreshed
+2025-12-24 09:43:32 INFO [payment-service] User login successful
+2025-12-24 09:43:34 INFO [system-monitor] Request processed successfully
+2025-12-24 09:43:36 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:43:39 INFO [auth-service] Connection established
+2025-12-24 09:43:41 INFO [payment-service] User login successful
+2025-12-24 09:43:42 INFO [payment-service] User login successful
+2025-12-24 09:43:43 INFO [network] User login successful
+2025-12-24 09:43:44 INFO [payment-service] Request processed successfully
+2025-12-24 09:43:49 INFO [payment-service] Health check passed
+2025-12-24 09:43:54 INFO [payment-service] Retry successful
+2025-12-24 09:43:57 INFO [order-service] User login successful
+2025-12-24 09:44:01 INFO [system-monitor] User login successful
+2025-12-24 09:44:03 INFO [network] Pod started
+2025-12-24 09:44:07 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:44:10 INFO [network] Health check passed
+2025-12-24 09:44:11 INFO [auth-service] Retry successful
+2025-12-24 09:44:16 INFO [payment-service] User login successful
+2025-12-24 09:44:20 INFO [order-service] Retry successful
+2025-12-24 09:44:24 WARNING [system-monitor] Disk usage exceeded threshold
+2025-12-24 09:44:27 WARNING [auth-service] Slow response detected
+2025-12-24 09:44:29 INFO [inventory-service] Cache refreshed
+2025-12-24 09:44:34 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:44:39 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:44:41 INFO [inventory-service] User login successful
+2025-12-24 09:44:45 INFO [payment-service] User login successful
+2025-12-24 09:44:49 INFO [auth-service] Connection established
+2025-12-24 09:44:53 INFO [network] Health check passed
+2025-12-24 09:44:56 INFO [system-monitor] Retry successful
+2025-12-24 09:45:01 INFO [inventory-service] Pod started
+2025-12-24 09:45:05 INFO [kubernetes] Cache refreshed
+2025-12-24 09:45:09 INFO [auth-service] Pod started
+2025-12-24 09:45:11 INFO [network] Autoscaling event triggered
+2025-12-24 09:45:16 INFO [network] Pod started
+2025-12-24 09:45:18 INFO [auth-service] Request processed successfully
+2025-12-24 09:45:23 INFO [auth-service] Pod started
+2025-12-24 09:45:24 INFO [order-service] Health check passed
+2025-12-24 09:45:25 INFO [payment-service] User login successful
+2025-12-24 09:45:30 INFO [system-monitor] Retry successful
+2025-12-24 09:45:33 INFO [kubernetes] Retry successful
+2025-12-24 09:45:34 INFO [network] Health check passed
+2025-12-24 09:45:39 INFO [payment-service] Health check passed
+2025-12-24 09:45:41 INFO [system-monitor] Connection established
+2025-12-24 09:45:45 INFO [inventory-service] Cache refreshed
+2025-12-24 09:45:47 INFO [payment-service] Health check passed
+2025-12-24 09:45:50 INFO [auth-service] Request processed successfully
+2025-12-24 09:45:51 INFO [system-monitor] Retry successful
+2025-12-24 09:45:56 INFO [kubernetes] Cache refreshed
+2025-12-24 09:45:59 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:46:04 INFO [inventory-service] Connection established
+2025-12-24 09:46:05 INFO [system-monitor] Health check passed
+2025-12-24 09:46:08 INFO [network] Cache refreshed
+2025-12-24 09:46:11 INFO [payment-service] User login successful
+2025-12-24 09:46:14 INFO [inventory-service] Retry successful
+2025-12-24 09:46:16 INFO [inventory-service] Retry successful
+2025-12-24 09:46:20 INFO [inventory-service] User login successful
+2025-12-24 09:46:22 INFO [auth-service] User login successful
+2025-12-24 09:46:24 INFO [order-service] Request processed successfully
+2025-12-24 09:46:29 INFO [kubernetes] User login successful
+2025-12-24 09:46:32 ERROR [inventory-service] Authentication failed
+2025-12-24 09:46:33 INFO [system-monitor] Connection established
+2025-12-24 09:46:37 INFO [network] Autoscaling event triggered
+2025-12-24 09:46:42 INFO [kubernetes] Cache refreshed
+2025-12-24 09:46:46 INFO [system-monitor] User login successful
+2025-12-24 09:46:50 INFO [network] Connection established
+2025-12-24 09:46:54 INFO [auth-service] Retry successful
+2025-12-24 09:46:55 WARNING [kubernetes] Memory usage exceeded threshold
+2025-12-24 09:47:00 INFO [kubernetes] Request processed successfully
+2025-12-24 09:47:04 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:47:05 INFO [payment-service] Retry successful
+2025-12-24 09:47:09 WARNING [order-service] Slow response detected
+2025-12-24 09:47:10 INFO [kubernetes] Cache refreshed
+2025-12-24 09:47:11 INFO [auth-service] Health check passed
+2025-12-24 09:47:13 INFO [auth-service] Pod started
+2025-12-24 09:47:16 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:47:21 INFO [network] Autoscaling event triggered
+2025-12-24 09:47:25 INFO [system-monitor] Pod started
+2025-12-24 09:47:30 INFO [kubernetes] Health check passed
+2025-12-24 09:47:33 INFO [kubernetes] Request processed successfully
+2025-12-24 09:47:36 INFO [payment-service] Pod started
+2025-12-24 09:47:41 INFO [auth-service] Pod started
+2025-12-24 09:47:43 INFO [system-monitor] Health check passed
+2025-12-24 09:47:47 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:47:48 INFO [payment-service] Cache refreshed
+2025-12-24 09:47:53 INFO [network] Request processed successfully
+2025-12-24 09:47:58 INFO [auth-service] Cache refreshed
+2025-12-24 09:47:59 INFO [auth-service] Connection established
+2025-12-24 09:48:03 INFO [order-service] Retry successful
+2025-12-24 09:48:08 INFO [inventory-service] Health check passed
+2025-12-24 09:48:12 INFO [kubernetes] Cache refreshed
+2025-12-24 09:48:13 INFO [inventory-service] Cache refreshed
+2025-12-24 09:48:16 INFO [system-monitor] Connection established
+2025-12-24 09:48:17 INFO [auth-service] User login successful
+2025-12-24 09:48:19 INFO [order-service] Cache refreshed
+2025-12-24 09:48:21 INFO [system-monitor] Pod started
+2025-12-24 09:48:22 INFO [order-service] Health check passed
+2025-12-24 09:48:24 INFO [system-monitor] User login successful
+2025-12-24 09:48:28 WARNING [network] Disk usage exceeded threshold
+2025-12-24 09:48:29 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:48:30 INFO [system-monitor] Connection established
+2025-12-24 09:48:32 INFO [system-monitor] Retry successful
+2025-12-24 09:48:36 INFO [kubernetes] Cache refreshed
+2025-12-24 09:48:39 INFO [kubernetes] User login successful
+2025-12-24 09:48:41 INFO [network] User login successful
+2025-12-24 09:48:42 INFO [order-service] Connection established
+2025-12-24 09:48:44 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:48:48 INFO [order-service] Pod started
+2025-12-24 09:48:53 INFO [order-service] Retry successful
+2025-12-24 09:48:58 INFO [network] User login successful
+2025-12-24 09:49:01 INFO [network] Connection established
+2025-12-24 09:49:06 INFO [inventory-service] Retry successful
+2025-12-24 09:49:09 INFO [kubernetes] Cache refreshed
+2025-12-24 09:49:12 INFO [order-service] Health check passed
+2025-12-24 09:49:17 INFO [order-service] Request processed successfully
+2025-12-24 09:49:20 INFO [inventory-service] Request processed successfully
+2025-12-24 09:49:21 INFO [auth-service] Cache refreshed
+2025-12-24 09:49:25 INFO [system-monitor] Health check passed
+2025-12-24 09:49:27 INFO [kubernetes] Cache refreshed
+2025-12-24 09:49:30 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:49:31 INFO [auth-service] User login successful
+2025-12-24 09:49:34 INFO [auth-service] Pod started
+2025-12-24 09:49:36 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:49:39 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:49:44 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:49:49 INFO [inventory-service] Request processed successfully
+2025-12-24 09:49:52 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:49:54 INFO [network] Retry successful
+2025-12-24 09:49:59 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:50:02 INFO [kubernetes] Health check passed
+2025-12-24 09:50:07 INFO [network] Autoscaling event triggered
+2025-12-24 09:50:09 INFO [kubernetes] Connection established
+2025-12-24 09:50:11 INFO [payment-service] Pod started
+2025-12-24 09:50:16 INFO [network] Health check passed
+2025-12-24 09:50:20 INFO [payment-service] User login successful
+2025-12-24 09:50:25 INFO [network] Health check passed
+2025-12-24 09:50:28 INFO [auth-service] Cache refreshed
+2025-12-24 09:50:31 INFO [auth-service] Pod started
+2025-12-24 09:50:33 INFO [payment-service] Pod started
+2025-12-24 09:50:34 INFO [kubernetes] Health check passed
+2025-12-24 09:50:38 INFO [inventory-service] Pod started
+2025-12-24 09:50:41 WARNING [auth-service] Slow response detected
+2025-12-24 09:50:46 INFO [network] Health check passed
+2025-12-24 09:50:48 INFO [order-service] Connection established
+2025-12-24 09:50:50 INFO [inventory-service] Health check passed
+2025-12-24 09:50:54 INFO [system-monitor] Retry successful
+2025-12-24 09:50:58 WARNING [auth-service] Slow response detected
+2025-12-24 09:51:02 INFO [payment-service] Health check passed
+2025-12-24 09:51:05 INFO [inventory-service] User login successful
+2025-12-24 09:51:10 INFO [payment-service] User login successful
+2025-12-24 09:51:15 INFO [inventory-service] Pod started
+2025-12-24 09:51:16 INFO [kubernetes] Connection established
+2025-12-24 09:51:17 INFO [payment-service] Pod started
+2025-12-24 09:51:19 INFO [order-service] Pod started
+2025-12-24 09:51:22 INFO [order-service] Cache refreshed
+2025-12-24 09:51:24 INFO [auth-service] Pod started
+2025-12-24 09:51:28 INFO [network] Pod started
+2025-12-24 09:51:33 INFO [network] Connection established
+2025-12-24 09:51:35 INFO [kubernetes] Health check passed
+2025-12-24 09:51:38 INFO [payment-service] Health check passed
+2025-12-24 09:51:39 INFO [system-monitor] Request processed successfully
+2025-12-24 09:51:40 INFO [network] User login successful
+2025-12-24 09:51:45 INFO [kubernetes] Health check passed
+2025-12-24 09:51:48 INFO [auth-service] Health check passed
+2025-12-24 09:51:53 INFO [payment-service] Health check passed
+2025-12-24 09:51:56 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:51:58 INFO [kubernetes] Request processed successfully
+2025-12-24 09:52:03 INFO [kubernetes] Pod started
+2025-12-24 09:52:06 INFO [auth-service] Cache refreshed
+2025-12-24 09:52:11 INFO [order-service] User login successful
+2025-12-24 09:52:15 INFO [system-monitor] Retry successful
+2025-12-24 09:52:20 INFO [network] Health check passed
+2025-12-24 09:52:23 INFO [system-monitor] User login successful
+2025-12-24 09:52:27 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 09:52:28 INFO [auth-service] Connection established
+2025-12-24 09:52:31 WARNING [inventory-service] Memory usage exceeded threshold
+2025-12-24 09:52:35 INFO [payment-service] Cache refreshed
+2025-12-24 09:52:40 INFO [order-service] Health check passed
+2025-12-24 09:52:44 INFO [auth-service] Cache refreshed
+2025-12-24 09:52:48 INFO [inventory-service] Retry successful
+2025-12-24 09:52:52 WARNING [network] Slow response detected
+2025-12-24 09:52:57 INFO [kubernetes] Health check passed
+2025-12-24 09:53:02 INFO [order-service] Pod started
+2025-12-24 09:53:03 INFO [order-service] Retry successful
+2025-12-24 09:53:07 INFO [order-service] Retry successful
+2025-12-24 09:53:09 INFO [system-monitor] Retry successful
+2025-12-24 09:53:13 INFO [payment-service] Connection established
+2025-12-24 09:53:18 INFO [auth-service] Request processed successfully
+2025-12-24 09:53:19 INFO [order-service] Health check passed
+2025-12-24 09:53:20 INFO [kubernetes] User login successful
+2025-12-24 09:53:22 INFO [auth-service] Health check passed
+2025-12-24 09:53:24 INFO [kubernetes] Request processed successfully
+2025-12-24 09:53:26 INFO [system-monitor] Connection established
+2025-12-24 09:53:29 INFO [auth-service] User login successful
+2025-12-24 09:53:30 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:53:33 INFO [order-service] Connection established
+2025-12-24 09:53:38 INFO [payment-service] Health check passed
+2025-12-24 09:53:42 INFO [payment-service] Pod started
+2025-12-24 09:53:43 INFO [auth-service] Retry successful
+2025-12-24 09:53:46 INFO [inventory-service] Health check passed
+2025-12-24 09:53:50 INFO [network] Cache refreshed
+2025-12-24 09:53:54 INFO [network] Pod started
+2025-12-24 09:53:59 INFO [network] Health check passed
+2025-12-24 09:54:00 INFO [order-service] Pod started
+2025-12-24 09:54:03 INFO [auth-service] Health check passed
+2025-12-24 09:54:04 INFO [network] User login successful
+2025-12-24 09:54:09 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:54:10 INFO [kubernetes] Connection established
+2025-12-24 09:54:14 INFO [system-monitor] User login successful
+2025-12-24 09:54:19 INFO [system-monitor] Cache refreshed
+2025-12-24 09:54:21 INFO [network] Request processed successfully
+2025-12-24 09:54:23 INFO [payment-service] Pod started
+2025-12-24 09:54:25 INFO [network] Connection established
+2025-12-24 09:54:28 INFO [kubernetes] Pod started
+2025-12-24 09:54:32 INFO [order-service] Retry successful
+2025-12-24 09:54:35 INFO [order-service] Health check passed
+2025-12-24 09:54:36 INFO [inventory-service] Connection established
+2025-12-24 09:54:37 INFO [payment-service] Retry successful
+2025-12-24 09:54:39 INFO [system-monitor] Pod started
+2025-12-24 09:54:40 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:54:41 INFO [kubernetes] Cache refreshed
+2025-12-24 09:54:46 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:54:49 INFO [network] Connection established
+2025-12-24 09:54:54 INFO [system-monitor] User login successful
+2025-12-24 09:54:55 INFO [order-service] Pod started
+2025-12-24 09:54:57 INFO [auth-service] Health check passed
+2025-12-24 09:55:02 INFO [system-monitor] Cache refreshed
+2025-12-24 09:55:06 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:55:07 INFO [payment-service] Health check passed
+2025-12-24 09:55:11 WARNING [order-service] Memory usage exceeded threshold
+2025-12-24 09:55:12 INFO [auth-service] User login successful
+2025-12-24 09:55:13 INFO [payment-service] Connection established
+2025-12-24 09:55:14 INFO [kubernetes] Connection established
+2025-12-24 09:55:18 INFO [system-monitor] Request processed successfully
+2025-12-24 09:55:20 INFO [system-monitor] Connection established
+2025-12-24 09:55:22 INFO [auth-service] Pod started
+2025-12-24 09:55:23 INFO [inventory-service] Retry successful
+2025-12-24 09:55:27 INFO [system-monitor] User login successful
+2025-12-24 09:55:32 INFO [inventory-service] User login successful
+2025-12-24 09:55:34 INFO [system-monitor] Retry successful
+2025-12-24 09:55:35 INFO [network] Pod started
+2025-12-24 09:55:40 INFO [order-service] Pod started
+2025-12-24 09:55:45 INFO [inventory-service] User login successful
+2025-12-24 09:55:50 INFO [kubernetes] Connection established
+2025-12-24 09:55:54 INFO [system-monitor] Request processed successfully
+2025-12-24 09:55:58 INFO [auth-service] Retry successful
+2025-12-24 09:56:02 INFO [inventory-service] Retry successful
+2025-12-24 09:56:05 INFO [order-service] Request processed successfully
+2025-12-24 09:56:08 INFO [order-service] Autoscaling event triggered
+2025-12-24 09:56:11 INFO [order-service] Health check passed
+2025-12-24 09:56:16 INFO [inventory-service] Cache refreshed
+2025-12-24 09:56:19 INFO [inventory-service] Health check passed
+2025-12-24 09:56:24 INFO [network] User login successful
+2025-12-24 09:56:28 INFO [order-service] Cache refreshed
+2025-12-24 09:56:32 INFO [inventory-service] Connection established
+2025-12-24 09:56:33 INFO [network] Health check passed
+2025-12-24 09:56:37 INFO [system-monitor] Health check passed
+2025-12-24 09:56:42 INFO [order-service] Pod started
+2025-12-24 09:56:47 INFO [payment-service] Request processed successfully
+2025-12-24 09:56:49 INFO [inventory-service] Health check passed
+2025-12-24 09:56:54 INFO [network] Cache refreshed
+2025-12-24 09:56:58 INFO [kubernetes] Retry successful
+2025-12-24 09:57:00 INFO [payment-service] Cache refreshed
+2025-12-24 09:57:03 INFO [auth-service] Retry successful
+2025-12-24 09:57:04 WARNING [network] High CPU utilization
+2025-12-24 09:57:05 INFO [network] Autoscaling event triggered
+2025-12-24 09:57:08 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 09:57:10 INFO [auth-service] Request processed successfully
+2025-12-24 09:57:11 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:57:14 INFO [inventory-service] Pod started
+2025-12-24 09:57:15 INFO [auth-service] Pod started
+2025-12-24 09:57:20 INFO [auth-service] User login successful
+2025-12-24 09:57:25 INFO [network] Retry successful
+2025-12-24 09:57:28 INFO [network] Connection established
+2025-12-24 09:57:30 INFO [inventory-service] Retry successful
+2025-12-24 09:57:34 INFO [payment-service] Connection established
+2025-12-24 09:57:38 INFO [network] Retry successful
+2025-12-24 09:57:42 INFO [auth-service] Request processed successfully
+2025-12-24 09:57:47 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:57:52 INFO [order-service] Cache refreshed
+2025-12-24 09:57:53 INFO [auth-service] Request processed successfully
+2025-12-24 09:57:58 INFO [network] User login successful
+2025-12-24 09:58:02 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 09:58:05 INFO [auth-service] Cache refreshed
+2025-12-24 09:58:07 INFO [system-monitor] Pod started
+2025-12-24 09:58:10 INFO [network] Cache refreshed
+2025-12-24 09:58:13 INFO [inventory-service] User login successful
+2025-12-24 09:58:14 WARNING [order-service] High CPU utilization
+2025-12-24 09:58:16 INFO [inventory-service] Connection established
+2025-12-24 09:58:19 INFO [system-monitor] Health check passed
+2025-12-24 09:58:22 INFO [kubernetes] User login successful
+2025-12-24 09:58:23 INFO [network] Pod started
+2025-12-24 09:58:25 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:58:28 INFO [kubernetes] Request processed successfully
+2025-12-24 09:58:32 INFO [auth-service] Connection established
+2025-12-24 09:58:34 INFO [inventory-service] Cache refreshed
+2025-12-24 09:58:35 INFO [payment-service] Health check passed
+2025-12-24 09:58:40 INFO [kubernetes] Retry successful
+2025-12-24 09:58:41 WARNING [order-service] High CPU utilization
+2025-12-24 09:58:44 INFO [network] Connection established
+2025-12-24 09:58:47 INFO [network] Retry successful
+2025-12-24 09:58:52 INFO [order-service] Pod started
+2025-12-24 09:58:57 INFO [payment-service] Autoscaling event triggered
+2025-12-24 09:59:00 INFO [auth-service] Cache refreshed
+2025-12-24 09:59:05 INFO [system-monitor] Connection established
+2025-12-24 09:59:10 INFO [system-monitor] Connection established
+2025-12-24 09:59:15 INFO [payment-service] Connection established
+2025-12-24 09:59:19 INFO [network] Autoscaling event triggered
+2025-12-24 09:59:24 INFO [payment-service] Pod started
+2025-12-24 09:59:27 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:59:30 INFO [network] Autoscaling event triggered
+2025-12-24 09:59:35 INFO [kubernetes] Request processed successfully
+2025-12-24 09:59:38 INFO [order-service] Request processed successfully
+2025-12-24 09:59:40 INFO [inventory-service] Cache refreshed
+2025-12-24 09:59:42 INFO [system-monitor] Pod started
+2025-12-24 09:59:46 INFO [network] Autoscaling event triggered
+2025-12-24 09:59:48 INFO [auth-service] Pod started
+2025-12-24 09:59:50 INFO [kubernetes] Pod started
+2025-12-24 09:59:51 INFO [kubernetes] Health check passed
+2025-12-24 09:59:54 INFO [order-service] Connection established
+2025-12-24 09:59:55 INFO [auth-service] Autoscaling event triggered
+2025-12-24 09:59:58 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:00:01 INFO [network] Connection established
+2025-12-24 10:00:05 INFO [order-service] Connection established
+2025-12-24 10:00:10 INFO [network] Request processed successfully
+2025-12-24 10:00:13 INFO [payment-service] Cache refreshed
+2025-12-24 10:00:16 INFO [payment-service] Request processed successfully
+2025-12-24 10:00:20 WARNING [inventory-service] Disk usage exceeded threshold
+2025-12-24 10:00:24 INFO [network] Health check passed
+2025-12-24 10:00:28 INFO [auth-service] Connection established
+2025-12-24 10:00:32 WARNING [kubernetes] Disk usage exceeded threshold
+2025-12-24 10:00:37 INFO [order-service] Pod started
+2025-12-24 10:00:42 INFO [system-monitor] Pod started
+2025-12-24 10:00:45 INFO [inventory-service] Request processed successfully
+2025-12-24 10:00:46 INFO [network] Pod started
+2025-12-24 10:00:49 INFO [auth-service] Retry successful
+2025-12-24 10:00:51 INFO [inventory-service] Pod started
+2025-12-24 10:00:54 INFO [inventory-service] Request processed successfully
+2025-12-24 10:00:55 INFO [system-monitor] Health check passed
+2025-12-24 10:00:57 INFO [kubernetes] Pod started
+2025-12-24 10:00:59 INFO [auth-service] Request processed successfully
+2025-12-24 10:01:00 INFO [kubernetes] Request processed successfully
+2025-12-24 10:01:03 INFO [inventory-service] Request processed successfully
+2025-12-24 10:01:05 INFO [inventory-service] Cache refreshed
+2025-12-24 10:01:07 INFO [order-service] Health check passed
+2025-12-24 10:01:08 INFO [system-monitor] Cache refreshed
+2025-12-24 10:01:09 INFO [inventory-service] Connection established
+2025-12-24 10:01:11 INFO [payment-service] Pod started
+2025-12-24 10:01:16 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:01:19 INFO [kubernetes] User login successful
+2025-12-24 10:01:24 INFO [system-monitor] User login successful
+2025-12-24 10:01:28 INFO [inventory-service] Connection established
+2025-12-24 10:01:29 INFO [kubernetes] Cache refreshed
+2025-12-24 10:01:30 INFO [payment-service] Retry successful
+2025-12-24 10:01:33 INFO [auth-service] User login successful
+2025-12-24 10:01:34 INFO [system-monitor] Request processed successfully
+2025-12-24 10:01:39 INFO [inventory-service] Connection established
+2025-12-24 10:01:44 INFO [system-monitor] Cache refreshed
+2025-12-24 10:01:49 INFO [network] Pod started
+2025-12-24 10:01:54 INFO [order-service] Cache refreshed
+2025-12-24 10:01:58 INFO [inventory-service] Connection established
+2025-12-24 10:02:00 INFO [auth-service] Connection established
+2025-12-24 10:02:03 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:02:05 WARNING [order-service] Memory usage exceeded threshold
+2025-12-24 10:02:07 WARNING [network] Disk usage exceeded threshold
+2025-12-24 10:02:10 WARNING [payment-service] Disk usage exceeded threshold
+2025-12-24 10:02:11 WARNING [auth-service] Memory usage exceeded threshold
+2025-12-24 10:02:16 INFO [order-service] Pod started
+2025-12-24 10:02:21 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:02:26 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:02:31 INFO [payment-service] User login successful
+2025-12-24 10:02:34 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:02:37 INFO [payment-service] Connection established
+2025-12-24 10:02:38 INFO [auth-service] Retry successful
+2025-12-24 10:02:39 INFO [network] Connection established
+2025-12-24 10:02:44 INFO [auth-service] Request processed successfully
+2025-12-24 10:02:46 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:02:49 INFO [order-service] Cache refreshed
+2025-12-24 10:02:51 INFO [payment-service] Cache refreshed
+2025-12-24 10:02:56 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:02:57 ERROR [auth-service] Failed after retries
+2025-12-24 10:03:02 INFO [auth-service] User login successful
+2025-12-24 10:03:04 INFO [order-service] Health check passed
+2025-12-24 10:03:05 INFO [kubernetes] Retry successful
+2025-12-24 10:03:06 INFO [auth-service] Health check passed
+2025-12-24 10:03:08 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:03:10 INFO [network] Pod started
+2025-12-24 10:03:11 INFO [kubernetes] Request processed successfully
+2025-12-24 10:03:15 INFO [order-service] Connection established
+2025-12-24 10:03:20 INFO [payment-service] Retry successful
+2025-12-24 10:03:23 INFO [inventory-service] Pod started
+2025-12-24 10:03:25 INFO [kubernetes] Cache refreshed
+2025-12-24 10:03:28 INFO [auth-service] Health check passed
+2025-12-24 10:03:33 INFO [kubernetes] User login successful
+2025-12-24 10:03:37 INFO [network] Retry successful
+2025-12-24 10:03:42 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:03:44 INFO [kubernetes] Retry successful
+2025-12-24 10:03:45 WARNING [payment-service] Slow response detected
+2025-12-24 10:03:49 INFO [order-service] User login successful
+2025-12-24 10:03:50 INFO [auth-service] Pod started
+2025-12-24 10:03:53 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:03:55 INFO [network] Cache refreshed
+2025-12-24 10:04:00 INFO [inventory-service] Cache refreshed
+2025-12-24 10:04:03 INFO [order-service] Health check passed
+2025-12-24 10:04:06 INFO [kubernetes] Retry successful
+2025-12-24 10:04:08 INFO [inventory-service] Connection established
+2025-12-24 10:04:09 INFO [kubernetes] Connection established
+2025-12-24 10:04:11 INFO [inventory-service] Pod started
+2025-12-24 10:04:14 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:04:17 INFO [network] Connection established
+2025-12-24 10:04:21 INFO [kubernetes] Retry successful
+2025-12-24 10:04:24 INFO [network] Health check passed
+2025-12-24 10:04:29 INFO [order-service] Cache refreshed
+2025-12-24 10:04:32 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:04:33 INFO [network] Autoscaling event triggered
+2025-12-24 10:04:34 INFO [kubernetes] Retry successful
+2025-12-24 10:04:37 INFO [inventory-service] Pod started
+2025-12-24 10:04:39 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:04:43 INFO [order-service] Connection established
+2025-12-24 10:04:47 INFO [order-service] User login successful
+2025-12-24 10:04:50 INFO [auth-service] User login successful
+2025-12-24 10:04:52 INFO [inventory-service] User login successful
+2025-12-24 10:04:53 INFO [order-service] Cache refreshed
+2025-12-24 10:04:56 INFO [payment-service] Cache refreshed
+2025-12-24 10:05:00 INFO [network] User login successful
+2025-12-24 10:05:04 INFO [system-monitor] Connection established
+2025-12-24 10:05:06 INFO [network] Autoscaling event triggered
+2025-12-24 10:05:08 INFO [system-monitor] Retry successful
+2025-12-24 10:05:10 INFO [order-service] Retry successful
+2025-12-24 10:05:11 INFO [system-monitor] Cache refreshed
+2025-12-24 10:05:12 INFO [network] Pod started
+2025-12-24 10:05:13 INFO [order-service] Retry successful
+2025-12-24 10:05:16 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:05:19 INFO [payment-service] Retry successful
+2025-12-24 10:05:24 INFO [auth-service] Health check passed
+2025-12-24 10:05:25 INFO [order-service] Cache refreshed
+2025-12-24 10:05:26 INFO [auth-service] Pod started
+2025-12-24 10:05:30 INFO [inventory-service] Request processed successfully
+2025-12-24 10:05:31 INFO [order-service] Cache refreshed
+2025-12-24 10:05:35 INFO [system-monitor] Health check passed
+2025-12-24 10:05:40 INFO [network] Health check passed
+2025-12-24 10:05:43 INFO [order-service] Request processed successfully
+2025-12-24 10:05:48 INFO [kubernetes] User login successful
+2025-12-24 10:05:49 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:05:53 WARNING [payment-service] Slow response detected
+2025-12-24 10:05:56 INFO [inventory-service] Retry successful
+2025-12-24 10:05:58 INFO [payment-service] Health check passed
+2025-12-24 10:06:00 INFO [order-service] Pod started
+2025-12-24 10:06:05 INFO [auth-service] Connection established
+2025-12-24 10:06:08 INFO [kubernetes] Request processed successfully
+2025-12-24 10:06:11 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:06:15 INFO [order-service] Health check passed
+2025-12-24 10:06:19 INFO [auth-service] Pod started
+2025-12-24 10:06:20 INFO [system-monitor] Cache refreshed
+2025-12-24 10:06:21 INFO [payment-service] Request processed successfully
+2025-12-24 10:06:23 INFO [inventory-service] Pod started
+2025-12-24 10:06:28 INFO [system-monitor] Cache refreshed
+2025-12-24 10:06:30 INFO [kubernetes] Connection established
+2025-12-24 10:06:35 INFO [auth-service] Retry successful
+2025-12-24 10:06:39 ERROR [network] Connection reset by peer
+2025-12-24 10:06:44 INFO [kubernetes] Retry successful
+2025-12-24 10:06:49 INFO [network] Retry successful
+2025-12-24 10:06:50 INFO [order-service] Pod started
+2025-12-24 10:06:51 INFO [auth-service] Cache refreshed
+2025-12-24 10:06:53 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:06:57 INFO [order-service] Health check passed
+2025-12-24 10:07:00 INFO [inventory-service] User login successful
+2025-12-24 10:07:02 INFO [system-monitor] User login successful
+2025-12-24 10:07:04 INFO [auth-service] Pod started
+2025-12-24 10:07:05 INFO [payment-service] User login successful
+2025-12-24 10:07:10 INFO [kubernetes] Request processed successfully
+2025-12-24 10:07:12 INFO [order-service] Connection established
+2025-12-24 10:07:13 INFO [network] Cache refreshed
+2025-12-24 10:07:16 INFO [order-service] Request processed successfully
+2025-12-24 10:07:17 INFO [system-monitor] Request processed successfully
+2025-12-24 10:07:21 INFO [inventory-service] Cache refreshed
+2025-12-24 10:07:26 INFO [auth-service] Retry successful
+2025-12-24 10:07:30 WARNING [kubernetes] Disk usage exceeded threshold
+2025-12-24 10:07:33 INFO [order-service] Request processed successfully
+2025-12-24 10:07:36 INFO [auth-service] Connection established
+2025-12-24 10:07:41 INFO [network] Pod started
+2025-12-24 10:07:42 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:07:47 INFO [system-monitor] Retry successful
+2025-12-24 10:07:49 INFO [auth-service] User login successful
+2025-12-24 10:07:52 INFO [kubernetes] Retry successful
+2025-12-24 10:07:55 INFO [payment-service] Health check passed
+2025-12-24 10:08:00 INFO [inventory-service] Pod started
+2025-12-24 10:08:05 INFO [order-service] Connection established
+2025-12-24 10:08:06 INFO [system-monitor] Pod started
+2025-12-24 10:08:08 INFO [inventory-service] Retry successful
+2025-12-24 10:08:10 INFO [system-monitor] Cache refreshed
+2025-12-24 10:08:12 INFO [system-monitor] Request processed successfully
+2025-12-24 10:08:13 INFO [auth-service] Health check passed
+2025-12-24 10:08:17 INFO [kubernetes] Retry successful
+2025-12-24 10:08:22 INFO [inventory-service] Connection established
+2025-12-24 10:08:27 INFO [auth-service] Connection established
+2025-12-24 10:08:28 INFO [inventory-service] Pod started
+2025-12-24 10:08:33 INFO [order-service] Health check passed
+2025-12-24 10:08:37 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:08:38 INFO [payment-service] Connection established
+2025-12-24 10:08:43 INFO [system-monitor] Pod started
+2025-12-24 10:08:48 INFO [order-service] Connection established
+2025-12-24 10:08:52 INFO [payment-service] User login successful
+2025-12-24 10:08:54 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:08:58 INFO [order-service] Cache refreshed
+2025-12-24 10:09:02 INFO [network] Pod started
+2025-12-24 10:09:06 INFO [order-service] Health check passed
+2025-12-24 10:09:09 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:09:11 INFO [network] User login successful
+2025-12-24 10:09:14 INFO [auth-service] Request processed successfully
+2025-12-24 10:09:18 INFO [order-service] Pod started
+2025-12-24 10:09:21 INFO [kubernetes] Pod started
+2025-12-24 10:09:26 INFO [system-monitor] Pod started
+2025-12-24 10:09:28 INFO [kubernetes] Connection established
+2025-12-24 10:09:31 INFO [system-monitor] Cache refreshed
+2025-12-24 10:09:32 INFO [auth-service] Health check passed
+2025-12-24 10:09:33 WARNING [system-monitor] High CPU utilization
+2025-12-24 10:09:35 INFO [network] Retry successful
+2025-12-24 10:09:36 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:09:40 INFO [payment-service] Cache refreshed
+2025-12-24 10:09:43 INFO [order-service] User login successful
+2025-12-24 10:09:46 INFO [order-service] User login successful
+2025-12-24 10:09:51 INFO [auth-service] Request processed successfully
+2025-12-24 10:09:56 INFO [order-service] Connection established
+2025-12-24 10:09:58 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:10:03 INFO [order-service] Request processed successfully
+2025-12-24 10:10:07 INFO [inventory-service] Retry successful
+2025-12-24 10:10:09 INFO [order-service] Retry successful
+2025-12-24 10:10:14 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:10:17 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:10:21 INFO [payment-service] Health check passed
+2025-12-24 10:10:25 INFO [payment-service] Request processed successfully
+2025-12-24 10:10:29 ERROR [payment-service] Failed after retries
+2025-12-24 10:10:33 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:10:37 INFO [order-service] Retry successful
+2025-12-24 10:10:41 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:10:43 INFO [network] Retry successful
+2025-12-24 10:10:45 INFO [auth-service] Retry successful
+2025-12-24 10:10:50 INFO [inventory-service] User login successful
+2025-12-24 10:10:53 INFO [system-monitor] Connection established
+2025-12-24 10:10:57 WARNING [order-service] Disk usage exceeded threshold
+2025-12-24 10:11:02 INFO [payment-service] Pod started
+2025-12-24 10:11:04 INFO [network] Retry successful
+2025-12-24 10:11:09 INFO [network] Retry successful
+2025-12-24 10:11:14 INFO [system-monitor] Retry successful
+2025-12-24 10:11:17 INFO [inventory-service] Request processed successfully
+2025-12-24 10:11:21 INFO [auth-service] Retry successful
+2025-12-24 10:11:25 INFO [network] Connection established
+2025-12-24 10:11:29 INFO [order-service] Retry successful
+2025-12-24 10:11:33 INFO [payment-service] Request processed successfully
+2025-12-24 10:11:34 INFO [auth-service] User login successful
+2025-12-24 10:11:36 WARNING [auth-service] Disk usage exceeded threshold
+2025-12-24 10:11:37 INFO [payment-service] Retry successful
+2025-12-24 10:11:42 INFO [inventory-service] Retry successful
+2025-12-24 10:11:45 INFO [order-service] Connection established
+2025-12-24 10:11:47 INFO [kubernetes] Cache refreshed
+2025-12-24 10:11:51 INFO [inventory-service] Retry successful
+2025-12-24 10:11:54 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:11:56 INFO [order-service] Health check passed
+2025-12-24 10:12:00 INFO [inventory-service] Health check passed
+2025-12-24 10:12:01 INFO [order-service] Pod started
+2025-12-24 10:12:02 INFO [system-monitor] Retry successful
+2025-12-24 10:12:03 INFO [network] Connection established
+2025-12-24 10:12:08 INFO [system-monitor] Cache refreshed
+2025-12-24 10:12:12 INFO [order-service] Request processed successfully
+2025-12-24 10:12:14 INFO [payment-service] Request processed successfully
+2025-12-24 10:12:15 INFO [kubernetes] Cache refreshed
+2025-12-24 10:12:19 INFO [kubernetes] Retry successful
+2025-12-24 10:12:21 INFO [system-monitor] Retry successful
+2025-12-24 10:12:23 INFO [payment-service] Pod started
+2025-12-24 10:12:27 INFO [auth-service] Request processed successfully
+2025-12-24 10:12:30 INFO [inventory-service] Cache refreshed
+2025-12-24 10:12:32 INFO [network] Pod started
+2025-12-24 10:12:34 INFO [kubernetes] User login successful
+2025-12-24 10:12:39 INFO [payment-service] Cache refreshed
+2025-12-24 10:12:40 INFO [inventory-service] Retry successful
+2025-12-24 10:12:45 WARNING [system-monitor] High CPU utilization
+2025-12-24 10:12:49 INFO [system-monitor] Request processed successfully
+2025-12-24 10:12:52 INFO [system-monitor] Cache refreshed
+2025-12-24 10:12:56 INFO [inventory-service] Cache refreshed
+2025-12-24 10:13:00 INFO [inventory-service] Retry successful
+2025-12-24 10:13:03 INFO [network] Cache refreshed
+2025-12-24 10:13:06 INFO [auth-service] Connection established
+2025-12-24 10:13:10 INFO [network] Retry successful
+2025-12-24 10:13:11 WARNING [network] High CPU utilization
+2025-12-24 10:13:12 INFO [system-monitor] User login successful
+2025-12-24 10:13:13 INFO [inventory-service] Retry successful
+2025-12-24 10:13:14 INFO [system-monitor] Retry successful
+2025-12-24 10:13:19 INFO [inventory-service] Retry successful
+2025-12-24 10:13:21 INFO [order-service] Request processed successfully
+2025-12-24 10:13:24 INFO [auth-service] Health check passed
+2025-12-24 10:13:29 INFO [auth-service] Retry successful
+2025-12-24 10:13:30 INFO [inventory-service] User login successful
+2025-12-24 10:13:32 INFO [network] User login successful
+2025-12-24 10:13:36 INFO [payment-service] Request processed successfully
+2025-12-24 10:13:39 INFO [auth-service] Connection established
+2025-12-24 10:13:41 INFO [payment-service] User login successful
+2025-12-24 10:13:42 INFO [network] Request processed successfully
+2025-12-24 10:13:45 INFO [auth-service] Pod started
+2025-12-24 10:13:48 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:13:50 INFO [network] Retry successful
+2025-12-24 10:13:51 ERROR [payment-service] Pod crashed due to OOM
+2025-12-24 10:13:56 INFO [payment-service] Connection established
+2025-12-24 10:14:00 INFO [network] Autoscaling event triggered
+2025-12-24 10:14:05 INFO [payment-service] Retry successful
+2025-12-24 10:14:08 INFO [system-monitor] Retry successful
+2025-12-24 10:14:09 INFO [kubernetes] Cache refreshed
+2025-12-24 10:14:10 INFO [order-service] Health check passed
+2025-12-24 10:14:14 INFO [payment-service] Connection established
+2025-12-24 10:14:18 ERROR [kubernetes] Authentication failed
+2025-12-24 10:14:19 INFO [payment-service] Retry successful
+2025-12-24 10:14:20 INFO [network] Health check passed
+2025-12-24 10:14:21 INFO [auth-service] Pod started
+2025-12-24 10:14:24 INFO [payment-service] Health check passed
+2025-12-24 10:14:29 INFO [inventory-service] Connection established
+2025-12-24 10:14:33 INFO [inventory-service] Connection established
+2025-12-24 10:14:34 INFO [payment-service] User login successful
+2025-12-24 10:14:38 INFO [system-monitor] Connection established
+2025-12-24 10:14:39 INFO [system-monitor] Request processed successfully
+2025-12-24 10:14:43 INFO [system-monitor] Health check passed
+2025-12-24 10:14:47 INFO [network] Health check passed
+2025-12-24 10:14:48 INFO [auth-service] User login successful
+2025-12-24 10:14:52 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:14:57 INFO [payment-service] Pod started
+2025-12-24 10:14:59 INFO [system-monitor] Connection established
+2025-12-24 10:15:03 INFO [payment-service] Health check passed
+2025-12-24 10:15:07 INFO [system-monitor] User login successful
+2025-12-24 10:15:08 INFO [auth-service] Connection established
+2025-12-24 10:15:12 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:15:15 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:15:20 INFO [inventory-service] Connection established
+2025-12-24 10:15:25 INFO [payment-service] Cache refreshed
+2025-12-24 10:15:29 INFO [kubernetes] User login successful
+2025-12-24 10:15:32 INFO [system-monitor] Cache refreshed
+2025-12-24 10:15:34 INFO [network] Autoscaling event triggered
+2025-12-24 10:15:39 INFO [network] Retry successful
+2025-12-24 10:15:40 INFO [network] Cache refreshed
+2025-12-24 10:15:42 ERROR [auth-service] Failed after retries
+2025-12-24 10:15:45 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:15:50 INFO [order-service] Request processed successfully
+2025-12-24 10:15:54 INFO [order-service] Cache refreshed
+2025-12-24 10:15:57 WARNING [network] Slow response detected
+2025-12-24 10:16:01 INFO [auth-service] Health check passed
+2025-12-24 10:16:04 INFO [auth-service] Health check passed
+2025-12-24 10:16:08 INFO [inventory-service] Health check passed
+2025-12-24 10:16:12 WARNING [auth-service] Slow response detected
+2025-12-24 10:16:13 INFO [order-service] Connection established
+2025-12-24 10:16:14 WARNING [network] Disk usage exceeded threshold
+2025-12-24 10:16:19 INFO [auth-service] Pod started
+2025-12-24 10:16:20 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:16:21 INFO [payment-service] Pod started
+2025-12-24 10:16:25 INFO [system-monitor] Pod started
+2025-12-24 10:16:28 INFO [network] Cache refreshed
+2025-12-24 10:16:32 INFO [system-monitor] Cache refreshed
+2025-12-24 10:16:37 INFO [auth-service] Pod started
+2025-12-24 10:16:39 INFO [network] Connection established
+2025-12-24 10:16:42 INFO [payment-service] Pod started
+2025-12-24 10:16:43 INFO [auth-service] Request processed successfully
+2025-12-24 10:16:46 INFO [inventory-service] Request processed successfully
+2025-12-24 10:16:47 INFO [order-service] Connection established
+2025-12-24 10:16:48 INFO [inventory-service] Cache refreshed
+2025-12-24 10:16:49 INFO [order-service] Health check passed
+2025-12-24 10:16:51 INFO [network] Health check passed
+2025-12-24 10:16:54 INFO [payment-service] Retry successful
+2025-12-24 10:16:59 INFO [auth-service] Pod started
+2025-12-24 10:17:04 INFO [kubernetes] Pod started
+2025-12-24 10:17:07 INFO [network] Health check passed
+2025-12-24 10:17:09 INFO [auth-service] Request processed successfully
+2025-12-24 10:17:13 INFO [order-service] Retry successful
+2025-12-24 10:17:16 INFO [kubernetes] User login successful
+2025-12-24 10:17:17 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:17:21 INFO [network] Cache refreshed
+2025-12-24 10:17:26 INFO [order-service] Retry successful
+2025-12-24 10:17:30 INFO [network] Connection established
+2025-12-24 10:17:32 INFO [system-monitor] Retry successful
+2025-12-24 10:17:35 INFO [payment-service] Health check passed
+2025-12-24 10:17:39 INFO [order-service] Connection established
+2025-12-24 10:17:41 WARNING [inventory-service] Disk usage exceeded threshold
+2025-12-24 10:17:43 ERROR [payment-service] Failed after retries
+2025-12-24 10:17:45 INFO [order-service] Pod started
+2025-12-24 10:17:50 INFO [inventory-service] Pod started
+2025-12-24 10:17:51 INFO [payment-service] Request processed successfully
+2025-12-24 10:17:52 INFO [inventory-service] Retry successful
+2025-12-24 10:17:55 INFO [kubernetes] Health check passed
+2025-12-24 10:18:00 INFO [auth-service] Cache refreshed
+2025-12-24 10:18:01 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:18:04 WARNING [order-service] Memory usage exceeded threshold
+2025-12-24 10:18:05 INFO [network] User login successful
+2025-12-24 10:18:09 INFO [order-service] Request processed successfully
+2025-12-24 10:18:10 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:18:14 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:18:15 INFO [kubernetes] Health check passed
+2025-12-24 10:18:20 INFO [payment-service] Cache refreshed
+2025-12-24 10:18:21 INFO [system-monitor] User login successful
+2025-12-24 10:18:24 INFO [kubernetes] Retry successful
+2025-12-24 10:18:25 INFO [auth-service] Retry successful
+2025-12-24 10:18:26 INFO [payment-service] User login successful
+2025-12-24 10:18:29 INFO [order-service] Pod started
+2025-12-24 10:18:32 INFO [payment-service] Cache refreshed
+2025-12-24 10:18:36 INFO [kubernetes] Connection established
+2025-12-24 10:18:40 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:18:44 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:18:48 WARNING [payment-service] High CPU utilization
+2025-12-24 10:18:51 INFO [kubernetes] Request processed successfully
+2025-12-24 10:18:53 INFO [order-service] Connection established
+2025-12-24 10:18:54 INFO [inventory-service] Request processed successfully
+2025-12-24 10:18:58 INFO [payment-service] Connection established
+2025-12-24 10:19:03 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:19:06 INFO [inventory-service] User login successful
+2025-12-24 10:19:07 INFO [network] Request processed successfully
+2025-12-24 10:19:12 INFO [system-monitor] Cache refreshed
+2025-12-24 10:19:16 INFO [network] Request processed successfully
+2025-12-24 10:19:19 INFO [auth-service] Retry successful
+2025-12-24 10:19:24 INFO [kubernetes] User login successful
+2025-12-24 10:19:28 INFO [inventory-service] Request processed successfully
+2025-12-24 10:19:32 INFO [order-service] Health check passed
+2025-12-24 10:19:33 INFO [inventory-service] Connection established
+2025-12-24 10:19:34 INFO [network] Cache refreshed
+2025-12-24 10:19:38 INFO [order-service] Retry successful
+2025-12-24 10:19:40 INFO [network] User login successful
+2025-12-24 10:19:42 INFO [kubernetes] Cache refreshed
+2025-12-24 10:19:43 INFO [kubernetes] Cache refreshed
+2025-12-24 10:19:45 INFO [payment-service] Retry successful
+2025-12-24 10:19:46 INFO [system-monitor] Health check passed
+2025-12-24 10:19:49 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:19:54 INFO [auth-service] Connection established
+2025-12-24 10:19:56 INFO [inventory-service] Request processed successfully
+2025-12-24 10:19:57 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:20:02 INFO [system-monitor] Connection established
+2025-12-24 10:20:04 INFO [network] User login successful
+2025-12-24 10:20:09 INFO [payment-service] Pod started
+2025-12-24 10:20:14 INFO [order-service] User login successful
+2025-12-24 10:20:19 INFO [kubernetes] Pod started
+2025-12-24 10:20:24 INFO [payment-service] Retry successful
+2025-12-24 10:20:25 INFO [kubernetes] Retry successful
+2025-12-24 10:20:29 INFO [kubernetes] User login successful
+2025-12-24 10:20:32 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:20:36 INFO [auth-service] Pod started
+2025-12-24 10:20:38 INFO [order-service] User login successful
+2025-12-24 10:20:43 INFO [order-service] Retry successful
+2025-12-24 10:20:47 INFO [kubernetes] Request processed successfully
+2025-12-24 10:20:50 INFO [inventory-service] Pod started
+2025-12-24 10:20:53 ERROR [kubernetes] Service unavailable
+2025-12-24 10:20:55 INFO [system-monitor] Retry successful
+2025-12-24 10:20:58 INFO [auth-service] Cache refreshed
+2025-12-24 10:21:02 INFO [auth-service] Request processed successfully
+2025-12-24 10:21:04 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:21:05 INFO [inventory-service] Connection established
+2025-12-24 10:21:06 INFO [network] Request processed successfully
+2025-12-24 10:21:08 INFO [auth-service] Health check passed
+2025-12-24 10:21:09 INFO [inventory-service] Health check passed
+2025-12-24 10:21:12 INFO [kubernetes] Health check passed
+2025-12-24 10:21:15 INFO [payment-service] Retry successful
+2025-12-24 10:21:16 INFO [network] Autoscaling event triggered
+2025-12-24 10:21:20 INFO [network] Autoscaling event triggered
+2025-12-24 10:21:24 INFO [system-monitor] Retry successful
+2025-12-24 10:21:27 INFO [payment-service] Connection established
+2025-12-24 10:21:29 INFO [payment-service] Retry successful
+2025-12-24 10:21:32 WARNING [network] High CPU utilization
+2025-12-24 10:21:33 INFO [network] User login successful
+2025-12-24 10:21:35 INFO [network] Request processed successfully
+2025-12-24 10:21:37 INFO [payment-service] Connection established
+2025-12-24 10:21:40 INFO [inventory-service] Connection established
+2025-12-24 10:21:41 INFO [kubernetes] Request processed successfully
+2025-12-24 10:21:43 WARNING [payment-service] High CPU utilization
+2025-12-24 10:21:45 INFO [order-service] Pod started
+2025-12-24 10:21:46 INFO [kubernetes] Health check passed
+2025-12-24 10:21:51 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:21:52 INFO [kubernetes] Request processed successfully
+2025-12-24 10:21:57 INFO [kubernetes] Health check passed
+2025-12-24 10:22:02 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:22:04 INFO [auth-service] User login successful
+2025-12-24 10:22:07 INFO [payment-service] Pod started
+2025-12-24 10:22:08 INFO [inventory-service] User login successful
+2025-12-24 10:22:13 INFO [network] Health check passed
+2025-12-24 10:22:18 INFO [order-service] User login successful
+2025-12-24 10:22:21 INFO [inventory-service] Retry successful
+2025-12-24 10:22:22 INFO [system-monitor] Connection established
+2025-12-24 10:22:25 INFO [auth-service] Connection established
+2025-12-24 10:22:27 INFO [kubernetes] User login successful
+2025-12-24 10:22:31 INFO [auth-service] Request processed successfully
+2025-12-24 10:22:35 INFO [system-monitor] Retry successful
+2025-12-24 10:22:38 INFO [network] Retry successful
+2025-12-24 10:22:40 INFO [kubernetes] Health check passed
+2025-12-24 10:22:45 INFO [order-service] Pod started
+2025-12-24 10:22:49 INFO [inventory-service] Request processed successfully
+2025-12-24 10:22:54 INFO [system-monitor] Health check passed
+2025-12-24 10:22:59 INFO [system-monitor] Cache refreshed
+2025-12-24 10:23:03 INFO [order-service] User login successful
+2025-12-24 10:23:08 INFO [network] Retry successful
+2025-12-24 10:23:10 WARNING [system-monitor] Disk usage exceeded threshold
+2025-12-24 10:23:14 INFO [payment-service] User login successful
+2025-12-24 10:23:18 INFO [inventory-service] User login successful
+2025-12-24 10:23:23 INFO [kubernetes] User login successful
+2025-12-24 10:23:27 INFO [order-service] Retry successful
+2025-12-24 10:23:29 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:23:32 INFO [payment-service] Connection established
+2025-12-24 10:23:36 INFO [payment-service] User login successful
+2025-12-24 10:23:40 INFO [system-monitor] Pod started
+2025-12-24 10:23:42 INFO [system-monitor] Connection established
+2025-12-24 10:23:45 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:23:48 INFO [kubernetes] User login successful
+2025-12-24 10:23:50 INFO [payment-service] Connection established
+2025-12-24 10:23:54 INFO [auth-service] Request processed successfully
+2025-12-24 10:23:57 INFO [payment-service] User login successful
+2025-12-24 10:24:02 INFO [network] Connection established
+2025-12-24 10:24:04 INFO [system-monitor] User login successful
+2025-12-24 10:24:09 INFO [system-monitor] Retry successful
+2025-12-24 10:24:10 INFO [order-service] User login successful
+2025-12-24 10:24:15 INFO [inventory-service] Cache refreshed
+2025-12-24 10:24:19 INFO [payment-service] Cache refreshed
+2025-12-24 10:24:21 INFO [auth-service] Pod started
+2025-12-24 10:24:25 INFO [inventory-service] Request processed successfully
+2025-12-24 10:24:30 INFO [inventory-service] Retry successful
+2025-12-24 10:24:35 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:24:40 ERROR [network] Failed after retries
+2025-12-24 10:24:45 INFO [auth-service] Cache refreshed
+2025-12-24 10:24:50 INFO [network] Autoscaling event triggered
+2025-12-24 10:24:53 INFO [network] Connection established
+2025-12-24 10:24:56 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:24:59 INFO [inventory-service] Autoscaling event triggered
+2025-12-24 10:25:01 INFO [network] Request processed successfully
+2025-12-24 10:25:02 INFO [network] Cache refreshed
+2025-12-24 10:25:05 INFO [inventory-service] Pod started
+2025-12-24 10:25:09 INFO [system-monitor] Health check passed
+2025-12-24 10:25:11 INFO [order-service] Retry successful
+2025-12-24 10:25:12 INFO [kubernetes] Cache refreshed
+2025-12-24 10:25:17 INFO [order-service] Request processed successfully
+2025-12-24 10:25:22 WARNING [inventory-service] Memory usage exceeded threshold
+2025-12-24 10:25:25 INFO [order-service] Health check passed
+2025-12-24 10:25:28 INFO [system-monitor] Pod started
+2025-12-24 10:25:29 INFO [order-service] Request processed successfully
+2025-12-24 10:25:33 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:25:36 WARNING [order-service] Disk usage exceeded threshold
+2025-12-24 10:25:41 INFO [system-monitor] User login successful
+2025-12-24 10:25:43 INFO [kubernetes] Request processed successfully
+2025-12-24 10:25:44 INFO [auth-service] Cache refreshed
+2025-12-24 10:25:47 INFO [network] Connection established
+2025-12-24 10:25:52 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:25:57 INFO [auth-service] Cache refreshed
+2025-12-24 10:26:00 INFO [kubernetes] Connection established
+2025-12-24 10:26:03 INFO [system-monitor] Cache refreshed
+2025-12-24 10:26:04 INFO [inventory-service] Connection established
+2025-12-24 10:26:09 INFO [system-monitor] Health check passed
+2025-12-24 10:26:12 INFO [kubernetes] Connection established
+2025-12-24 10:26:15 INFO [system-monitor] Cache refreshed
+2025-12-24 10:26:20 INFO [system-monitor] Request processed successfully
+2025-12-24 10:26:22 INFO [payment-service] Retry successful
+2025-12-24 10:26:27 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:26:31 INFO [auth-service] Health check passed
+2025-12-24 10:26:36 INFO [inventory-service] Retry successful
+2025-12-24 10:26:41 INFO [payment-service] Health check passed
+2025-12-24 10:26:44 INFO [network] Retry successful
+2025-12-24 10:26:47 INFO [order-service] Request processed successfully
+2025-12-24 10:26:51 INFO [payment-service] Connection established
+2025-12-24 10:26:55 INFO [system-monitor] User login successful
+2025-12-24 10:26:56 INFO [kubernetes] Retry successful
+2025-12-24 10:27:01 INFO [system-monitor] User login successful
+2025-12-24 10:27:04 INFO [order-service] Connection established
+2025-12-24 10:27:09 INFO [auth-service] Retry successful
+2025-12-24 10:27:14 WARNING [system-monitor] Slow response detected
+2025-12-24 10:27:17 INFO [payment-service] Retry successful
+2025-12-24 10:27:22 INFO [kubernetes] Pod started
+2025-12-24 10:27:24 INFO [system-monitor] User login successful
+2025-12-24 10:27:29 INFO [payment-service] Cache refreshed
+2025-12-24 10:27:34 INFO [auth-service] Cache refreshed
+2025-12-24 10:27:35 INFO [payment-service] Retry successful
+2025-12-24 10:27:38 INFO [payment-service] Health check passed
+2025-12-24 10:27:41 INFO [auth-service] Cache refreshed
+2025-12-24 10:27:42 INFO [network] Pod started
+2025-12-24 10:27:45 INFO [system-monitor] Pod started
+2025-12-24 10:27:46 INFO [kubernetes] Connection established
+2025-12-24 10:27:51 INFO [order-service] Retry successful
+2025-12-24 10:27:54 INFO [auth-service] Health check passed
+2025-12-24 10:27:57 INFO [payment-service] Retry successful
+2025-12-24 10:27:59 INFO [inventory-service] Health check passed
+2025-12-24 10:28:00 INFO [system-monitor] Cache refreshed
+2025-12-24 10:28:03 INFO [payment-service] Cache refreshed
+2025-12-24 10:28:04 INFO [network] Cache refreshed
+2025-12-24 10:28:09 INFO [network] Retry successful
+2025-12-24 10:28:10 INFO [system-monitor] Connection established
+2025-12-24 10:28:15 INFO [inventory-service] Pod started
+2025-12-24 10:28:18 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:28:20 INFO [auth-service] Connection established
+2025-12-24 10:28:24 INFO [kubernetes] Request processed successfully
+2025-12-24 10:28:25 INFO [order-service] Pod started
+2025-12-24 10:28:26 INFO [auth-service] Retry successful
+2025-12-24 10:28:28 INFO [system-monitor] Health check passed
+2025-12-24 10:28:33 INFO [order-service] Connection established
+2025-12-24 10:28:38 INFO [system-monitor] Connection established
+2025-12-24 10:28:43 INFO [kubernetes] User login successful
+2025-12-24 10:28:48 WARNING [system-monitor] Slow response detected
+2025-12-24 10:28:49 INFO [payment-service] Pod started
+2025-12-24 10:28:54 INFO [kubernetes] Connection established
+2025-12-24 10:28:58 WARNING [order-service] High CPU utilization
+2025-12-24 10:29:03 INFO [kubernetes] Retry successful
+2025-12-24 10:29:08 INFO [network] Health check passed
+2025-12-24 10:29:10 INFO [network] Request processed successfully
+2025-12-24 10:29:15 INFO [kubernetes] Request processed successfully
+2025-12-24 10:29:16 INFO [kubernetes] Pod started
+2025-12-24 10:29:20 INFO [kubernetes] Request processed successfully
+2025-12-24 10:29:24 WARNING [payment-service] High CPU utilization
+2025-12-24 10:29:26 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:29:30 INFO [system-monitor] Pod started
+2025-12-24 10:29:32 INFO [order-service] Health check passed
+2025-12-24 10:29:36 INFO [payment-service] Retry successful
+2025-12-24 10:29:39 INFO [system-monitor] Pod started
+2025-12-24 10:29:43 INFO [order-service] Pod started
+2025-12-24 10:29:48 INFO [order-service] User login successful
+2025-12-24 10:29:51 INFO [auth-service] Request processed successfully
+2025-12-24 10:29:54 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:29:57 INFO [auth-service] Connection established
+2025-12-24 10:30:02 INFO [system-monitor] User login successful
+2025-12-24 10:30:06 INFO [payment-service] Cache refreshed
+2025-12-24 10:30:07 INFO [auth-service] Pod started
+2025-12-24 10:30:12 WARNING [inventory-service] Memory usage exceeded threshold
+2025-12-24 10:30:16 WARNING [auth-service] Disk usage exceeded threshold
+2025-12-24 10:30:19 INFO [inventory-service] User login successful
+2025-12-24 10:30:23 ERROR [auth-service] Connection reset by peer
+2025-12-24 10:30:24 INFO [kubernetes] User login successful
+2025-12-24 10:30:27 INFO [inventory-service] Health check passed
+2025-12-24 10:30:31 INFO [payment-service] Retry successful
+2025-12-24 10:30:34 INFO [network] User login successful
+2025-12-24 10:30:39 INFO [order-service] Pod started
+2025-12-24 10:30:41 INFO [order-service] Cache refreshed
+2025-12-24 10:30:44 INFO [order-service] Pod started
+2025-12-24 10:30:46 INFO [auth-service] Request processed successfully
+2025-12-24 10:30:47 INFO [payment-service] Retry successful
+2025-12-24 10:30:48 INFO [payment-service] Pod started
+2025-12-24 10:30:49 INFO [order-service] Retry successful
+2025-12-24 10:30:53 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:30:57 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:31:01 WARNING [payment-service] Memory usage exceeded threshold
+2025-12-24 10:31:05 INFO [payment-service] Pod started
+2025-12-24 10:31:06 INFO [inventory-service] User login successful
+2025-12-24 10:31:09 INFO [network] Connection established
+2025-12-24 10:31:13 WARNING [payment-service] Slow response detected
+2025-12-24 10:31:17 INFO [inventory-service] Health check passed
+2025-12-24 10:31:22 INFO [auth-service] Retry successful
+2025-12-24 10:31:24 WARNING [inventory-service] Slow response detected
+2025-12-24 10:31:27 INFO [system-monitor] Health check passed
+2025-12-24 10:31:32 INFO [kubernetes] Health check passed
+2025-12-24 10:31:36 INFO [kubernetes] Cache refreshed
+2025-12-24 10:31:40 INFO [auth-service] User login successful
+2025-12-24 10:31:41 INFO [order-service] User login successful
+2025-12-24 10:31:45 INFO [system-monitor] Request processed successfully
+2025-12-24 10:31:47 INFO [auth-service] Cache refreshed
+2025-12-24 10:31:52 INFO [network] Connection established
+2025-12-24 10:31:57 INFO [system-monitor] Pod started
+2025-12-24 10:31:58 INFO [inventory-service] Request processed successfully
+2025-12-24 10:31:59 INFO [system-monitor] User login successful
+2025-12-24 10:32:02 INFO [order-service] Health check passed
+2025-12-24 10:32:06 INFO [auth-service] Connection established
+2025-12-24 10:32:11 INFO [auth-service] Connection established
+2025-12-24 10:32:12 INFO [payment-service] Cache refreshed
+2025-12-24 10:32:16 INFO [system-monitor] Request processed successfully
+2025-12-24 10:32:19 INFO [payment-service] Pod started
+2025-12-24 10:32:22 INFO [network] Health check passed
+2025-12-24 10:32:25 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:32:28 INFO [auth-service] Request processed successfully
+2025-12-24 10:32:30 INFO [auth-service] Health check passed
+2025-12-24 10:32:35 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:32:40 INFO [inventory-service] Retry successful
+2025-12-24 10:32:43 INFO [inventory-service] Retry successful
+2025-12-24 10:32:48 INFO [kubernetes] Request processed successfully
+2025-12-24 10:32:49 INFO [network] Request processed successfully
+2025-12-24 10:32:50 INFO [payment-service] Pod started
+2025-12-24 10:32:51 INFO [auth-service] Cache refreshed
+2025-12-24 10:32:56 INFO [network] Health check passed
+2025-12-24 10:32:57 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:33:00 INFO [kubernetes] Pod started
+2025-12-24 10:33:01 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:33:05 INFO [inventory-service] User login successful
+2025-12-24 10:33:09 INFO [payment-service] Request processed successfully
+2025-12-24 10:33:11 INFO [network] Pod started
+2025-12-24 10:33:16 INFO [payment-service] Health check passed
+2025-12-24 10:33:19 INFO [auth-service] Pod started
+2025-12-24 10:33:23 INFO [system-monitor] Request processed successfully
+2025-12-24 10:33:27 INFO [inventory-service] Pod started
+2025-12-24 10:33:29 INFO [system-monitor] Connection established
+2025-12-24 10:33:31 INFO [payment-service] Cache refreshed
+2025-12-24 10:33:35 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:33:36 INFO [network] Pod started
+2025-12-24 10:33:38 INFO [auth-service] Pod started
+2025-12-24 10:33:39 INFO [network] Autoscaling event triggered
+2025-12-24 10:33:40 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:33:45 WARNING [kubernetes] High CPU utilization
+2025-12-24 10:33:50 INFO [system-monitor] User login successful
+2025-12-24 10:33:53 INFO [payment-service] User login successful
+2025-12-24 10:33:55 INFO [network] Health check passed
+2025-12-24 10:34:00 INFO [system-monitor] Connection established
+2025-12-24 10:34:03 ERROR [auth-service] Pod crashed due to OOM
+2025-12-24 10:34:07 INFO [network] Retry successful
+2025-12-24 10:34:10 INFO [network] Autoscaling event triggered
+2025-12-24 10:34:14 INFO [payment-service] Pod started
+2025-12-24 10:34:17 INFO [kubernetes] Retry successful
+2025-12-24 10:34:21 INFO [network] Health check passed
+2025-12-24 10:34:26 WARNING [payment-service] Disk usage exceeded threshold
+2025-12-24 10:34:29 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:34:31 INFO [payment-service] Health check passed
+2025-12-24 10:34:36 INFO [system-monitor] User login successful
+2025-12-24 10:34:37 INFO [system-monitor] Pod started
+2025-12-24 10:34:42 INFO [network] Pod started
+2025-12-24 10:34:45 INFO [inventory-service] User login successful
+2025-12-24 10:34:48 WARNING [inventory-service] Disk usage exceeded threshold
+2025-12-24 10:34:51 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:34:55 INFO [auth-service] Connection established
+2025-12-24 10:34:59 INFO [inventory-service] Cache refreshed
+2025-12-24 10:35:01 INFO [payment-service] Request processed successfully
+2025-12-24 10:35:02 INFO [kubernetes] Pod started
+2025-12-24 10:35:07 INFO [inventory-service] Pod started
+2025-12-24 10:35:11 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:35:14 WARNING [auth-service] High CPU utilization
+2025-12-24 10:35:19 INFO [system-monitor] Retry successful
+2025-12-24 10:35:24 INFO [network] User login successful
+2025-12-24 10:35:28 INFO [network] Cache refreshed
+2025-12-24 10:35:32 INFO [network] Request processed successfully
+2025-12-24 10:35:37 INFO [system-monitor] User login successful
+2025-12-24 10:35:39 INFO [inventory-service] Retry successful
+2025-12-24 10:35:41 INFO [system-monitor] Pod started
+2025-12-24 10:35:43 INFO [payment-service] Autoscaling event triggered
+2025-12-24 10:35:46 INFO [auth-service] User login successful
+2025-12-24 10:35:48 INFO [order-service] Retry successful
+2025-12-24 10:35:50 INFO [order-service] Health check passed
+2025-12-24 10:35:51 INFO [kubernetes] Health check passed
+2025-12-24 10:35:56 INFO [inventory-service] Health check passed
+2025-12-24 10:35:57 INFO [order-service] User login successful
+2025-12-24 10:36:02 INFO [order-service] Request processed successfully
+2025-12-24 10:36:05 INFO [system-monitor] Retry successful
+2025-12-24 10:36:06 INFO [kubernetes] User login successful
+2025-12-24 10:36:08 INFO [inventory-service] Connection established
+2025-12-24 10:36:13 INFO [system-monitor] User login successful
+2025-12-24 10:36:18 INFO [network] Connection established
+2025-12-24 10:36:20 WARNING [kubernetes] High CPU utilization
+2025-12-24 10:36:25 INFO [payment-service] Cache refreshed
+2025-12-24 10:36:28 INFO [inventory-service] User login successful
+2025-12-24 10:36:33 INFO [order-service] Retry successful
+2025-12-24 10:36:38 INFO [order-service] Health check passed
+2025-12-24 10:36:41 INFO [auth-service] User login successful
+2025-12-24 10:36:43 INFO [network] Cache refreshed
+2025-12-24 10:36:45 INFO [order-service] Connection established
+2025-12-24 10:36:50 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:36:55 INFO [kubernetes] Pod started
+2025-12-24 10:36:56 INFO [order-service] Cache refreshed
+2025-12-24 10:36:59 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:37:02 INFO [payment-service] Connection established
+2025-12-24 10:37:05 INFO [auth-service] Connection established
+2025-12-24 10:37:06 INFO [network] Health check passed
+2025-12-24 10:37:07 INFO [auth-service] Pod started
+2025-12-24 10:37:09 INFO [auth-service] Autoscaling event triggered
+2025-12-24 10:37:14 INFO [network] Request processed successfully
+2025-12-24 10:37:18 INFO [order-service] Health check passed
+2025-12-24 10:37:20 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:37:21 INFO [network] Retry successful
+2025-12-24 10:37:24 INFO [system-monitor] Cache refreshed
+2025-12-24 10:37:29 INFO [payment-service] Retry successful
+2025-12-24 10:37:34 INFO [order-service] Health check passed
+2025-12-24 10:37:38 INFO [system-monitor] Connection established
+2025-12-24 10:37:42 INFO [order-service] Request processed successfully
+2025-12-24 10:37:43 INFO [inventory-service] Health check passed
+2025-12-24 10:37:44 INFO [system-monitor] Health check passed
+2025-12-24 10:37:48 INFO [payment-service] Retry successful
+2025-12-24 10:37:51 INFO [inventory-service] Pod started
+2025-12-24 10:37:52 INFO [kubernetes] Health check passed
+2025-12-24 10:37:53 INFO [system-monitor] Retry successful
+2025-12-24 10:37:54 INFO [order-service] Autoscaling event triggered
+2025-12-24 10:37:55 INFO [kubernetes] Cache refreshed
+2025-12-24 10:38:00 INFO [kubernetes] Connection established
+2025-12-24 10:38:02 INFO [payment-service] Health check passed
+2025-12-24 10:38:05 WARNING [payment-service] Disk usage exceeded threshold
+2025-12-24 10:38:10 INFO [order-service] Request processed successfully
+2025-12-24 10:38:12 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:38:16 INFO [system-monitor] Cache refreshed
+2025-12-24 10:38:21 INFO [system-monitor] Pod started
+2025-12-24 10:38:24 INFO [inventory-service] Retry successful
+2025-12-24 10:38:27 INFO [system-monitor] Health check passed
+2025-12-24 10:38:28 INFO [kubernetes] Retry successful
+2025-12-24 10:38:32 INFO [network] Pod started
+2025-12-24 10:38:36 INFO [network] Retry successful
+2025-12-24 10:38:37 INFO [auth-service] Retry successful
+2025-12-24 10:38:42 INFO [system-monitor] Cache refreshed
+2025-12-24 10:38:44 INFO [system-monitor] User login successful
+2025-12-24 10:38:46 INFO [system-monitor] Autoscaling event triggered
+2025-12-24 10:38:49 INFO [order-service] Cache refreshed
+2025-12-24 10:38:50 WARNING [kubernetes] Slow response detected
+2025-12-24 10:38:52 INFO [inventory-service] User login successful
+2025-12-24 10:38:55 INFO [kubernetes] Autoscaling event triggered
+2025-12-24 10:38:59 INFO [inventory-service] Request processed successfully
+2025-12-24 10:39:03 INFO [network] Connection established
+2025-12-24 10:39:06 INFO [payment-service] Pod started
+2025-12-24 10:39:07 WARNING [auth-service] Slow response detected
+2025-12-24 10:39:08 INFO [order-service] Pod started
+2025-12-24 10:39:13 INFO [order-service] Request processed successfully
+2025-12-24 10:39:17 INFO [auth-service] Health check passed
+2025-12-24 10:39:21 INFO [system-monitor] Health check passed
+2025-12-24 10:39:25 INFO [inventory-service] User login successful
+2025-12-24 10:39:30 INFO [kubernetes] Request processed successfully
+2025-12-24 10:39:31 INFO [order-service] User login successful
+2025-12-24 10:39:35 INFO [inventory-service] Health check passed
+2025-12-24 10:39:37 INFO [system-monitor] Cache refreshed
+2025-12-24 10:39:39 INFO [system-monitor] Pod started
+2025-12-24 10:39:42 INFO [system-monitor] Health check passed

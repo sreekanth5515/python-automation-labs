@@ -12,7 +12,7 @@ warning_count = 0
 
 error_logs = []
 warning_logs = []
-
+    
 error_by_service = {}
 
 with open(log_file, "r") as file:
